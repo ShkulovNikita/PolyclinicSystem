@@ -6,16 +6,15 @@ public class DoctorVisit
     [PrimaryKey, AutoIncrement]
     public int VisitID { get; set; }
 
-    [NotNull]
     public string Type { get; set; }
 
     [NotNull]
+    public string Date { get; set; }
+
     public string Complaints { get; set; }
 
-    [NotNull]
     public string Diagnosis { get; set; }
 
-    [NotNull]
     public string Treatment { get; set; }
 
     [NotNull]

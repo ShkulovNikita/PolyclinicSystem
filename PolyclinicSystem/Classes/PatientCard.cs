@@ -7,6 +7,9 @@ public class PatientCard
     [PrimaryKey, AutoIncrement]
     public int CardID { get; set; }
 
+    [Unique, NotNull]
+    public string CardNumber { get; set; }
+
     [ForeignKey(typeof(Patient))]
     public int PatientID { get; set; }
 

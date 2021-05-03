@@ -18,11 +18,14 @@ public class Patient
     [NotNull]
     public string Address { get; set; }
 
+    [NotNull]
+    public string BirthDate { get; set; }
+
     [NotNull, MaxLength(11)]
     public string Phone { get; set; }
 
     [ForeignKey(typeof(User))]
-    public string UserID { get; set; }
+    public int UserID { get; set; }
 
     [ManyToOne]
     public User User { get; set; }

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SQLite;
+using SQLiteNetExtensions.Attributes;
+using SQLiteNetExtensions.Extensions;
 
 namespace PolyclinicSystem
 {
@@ -15,6 +18,18 @@ namespace PolyclinicSystem
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.ShowError(ex);
+            }
         }
     }
 }

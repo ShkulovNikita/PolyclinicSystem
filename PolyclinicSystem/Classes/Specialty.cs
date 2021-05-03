@@ -7,7 +7,7 @@ public class Specialty
     [PrimaryKey, AutoIncrement]
     public int ID { get; set; }
 
-    [NotNull]
+    [NotNull, Unique]
     public string Name { get; set; }
 
     [OneToMany(CascadeOperations = CascadeOperation.All)]
