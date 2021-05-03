@@ -8,7 +8,6 @@ public class DoctorVisit
 
     public string Type { get; set; }
 
-    [NotNull]
     public string Date { get; set; }
 
     public string Complaints { get; set; }
@@ -31,4 +30,33 @@ public class DoctorVisit
 
     [ManyToOne]
     public PatientCard PatientCard { get; set; }
+
+    //перенести дату приема
+    public void Move(string newDate)
+    {
+        Date = newDate;
+        Status = "Перенесен";
+    }
+
+    //отменить прием
+    public void Cancel()
+    {
+        Status = "Отменен";
+        Date = null;
+    }
+
+    //завершить прием
+    public void Complete()
+    {
+        Status = "Завершен";
+    }
+
+    //записать информацию о приеме
+    public void WriteInfo(string type, string complaints, string diagnosis, string treatment)
+    {
+        Type = type;
+        Complaints = complaints;
+        Diagnosis = diagnosis;
+        Treatment = treatment;
+    }
 }

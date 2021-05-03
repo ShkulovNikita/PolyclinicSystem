@@ -24,7 +24,10 @@ namespace PolyclinicSystem
         {
             try
             {
-
+                using (SQLiteConnection db = new SQLiteConnection("Polyclinic.db"))
+                {
+                    
+                }
             }
             catch (Exception ex)
             {

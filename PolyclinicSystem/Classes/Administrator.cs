@@ -14,5 +14,10 @@ public class Administrator
 
     [ManyToOne]
     public User User { get; set; }
+
+    public void Edit(string phone)
+    {
+        Phone = phone;
+    }
 }
 

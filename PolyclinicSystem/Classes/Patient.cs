@@ -35,5 +35,13 @@ public class Patient
 
     [OneToMany(CascadeOperations = CascadeOperation.All)]
     public List<Feedback> Feedbacks { get; set; }
+
+    public void Edit(string oms, string jobplace, string address, string phone)
+    {
+        OMS = oms;
+        JobPlace = jobplace;
+        Address = address;
+        Phone = phone;
+    }
 }
 
