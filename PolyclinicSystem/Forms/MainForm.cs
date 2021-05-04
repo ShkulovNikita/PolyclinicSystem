@@ -23,6 +23,8 @@ namespace PolyclinicSystem
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            
+
             try
             {
                 using (SQLiteConnection db = new SQLiteConnection("Polyclinic.db"))
