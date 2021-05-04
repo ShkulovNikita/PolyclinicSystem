@@ -77,17 +77,18 @@
     <Compile Include="Classes\PatientCard.cs" />
     <Compile Include="Classes\Specialty.cs" />
     <Compile Include="Classes\User.cs" />
-    <Compile Include="DataHandler.cs" />
-    <Compile Include="ErrorHandler.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="SystemClasses\Authorization.cs" />
+    <Compile Include="SystemClasses\DataHandler.cs" />
+    <Compile Include="SystemClasses\ErrorHandler.cs" />
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

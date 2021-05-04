@@ -34,5 +34,22 @@ namespace PolyclinicSystem
                 ErrorHandler.ShowError(ex);
             }
         }
+
+        //нажатие на кнопку входа в профиль
+        private void signInButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                User user = Authorization.SignIn(loginTextBox.Text, passwordTextBox.Text);
+                if (user != null)
+                {
+                    loginTextBox.Text = "Вход выполнен: " + user.Name;
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.ShowError(ex);
+            }
+        }
     }
 }

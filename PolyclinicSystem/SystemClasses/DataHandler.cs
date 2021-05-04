@@ -277,6 +277,23 @@ namespace PolyclinicSystem
             }
         }
 
+        static public User GetUser(string login)
+        {
+            try
+            {
+                using(SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    User user = db.Query<User>("SELECT * FROM User WHERE Login = ?", login).First();
+                    return db.GetWithChildren<User>(user.ID);
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.ShowError(ex);
+                return null;
+            }
+        }
+
         static public Specialty GetSpecialty(string specName)
         {
             try
