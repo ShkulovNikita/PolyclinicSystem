@@ -324,7 +324,7 @@ namespace PolyclinicSystem
             }
             catch (Exception ex)
             {
-                ErrorHandler.ShowError(ex);
+                Logger.WriteLog(ex);
                 return null;
             }
         }
@@ -360,6 +360,24 @@ namespace PolyclinicSystem
             catch (Exception ex)
             {
                 ErrorHandler.ShowError(ex);
+                return null;
+            }
+        }
+
+        static public Administrator GetAdmin(string login)
+        {
+            try
+            {
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    User user = db.Query<User>("SELECT * FROM User WHERE Login = ?", login).First();
+                    Administrator admin = db.Query<Administrator>("SELECT * FROM Administrator WHERE UserId = ?", user.ID).First();
+                    return db.GetWithChildren<Administrator>(admin.AdminID);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
                 return null;
             }
         }

@@ -13,9 +13,9 @@ namespace PolyclinicSystem
         {
             try
             {
-                if ((login == "") || (login == null))
+                if (IsEmpty(login))
                     ErrorHandler.ShowError("Не введен логин");
-                else if ((password == "") || (password == null))
+                else if (IsEmpty(password))
                     ErrorHandler.ShowError("Не введен пароль");
                 else
                 {
@@ -45,11 +45,11 @@ namespace PolyclinicSystem
             try
             {
                 //проверки ввода полей
-                if ((login == "") || (login == null))
+                if (IsEmpty(login))
                     ErrorHandler.ShowError("Не введен логин");
-                else if ((email == "") || (email == null))
+                else if (IsEmpty(email))
                     ErrorHandler.ShowError("Не введена электронная почта");
-                else if ((password == "") || (password == null))
+                else if (IsEmpty(password))
                     ErrorHandler.ShowError("Не введен пароль");
                 else if (password != rptPassword)
                     ErrorHandler.ShowError("Пароли не совпадают");
@@ -117,11 +117,17 @@ namespace PolyclinicSystem
                         ErrorHandler.ShowError("Неверный формат ОМС");
                     else if (!Validator.CheckPhone(phone))
                         ErrorHandler.ShowError("Неверный формат номера телефона");
-                    //если всё правильно - создание нового пользователя-пациента
+                    //проверка, есть ли уже пользователь с таким логином
                     else
                     {
-                        DataHandler.AddPatient(login, fio, email, password, gender, oms, null, birthdate, address, phone);
-                        return DataHandler.GetPatient(login);
+                        if (DataHandler.GetPatient(login) != null)
+                            ErrorHandler.ShowError("Введенный логин уже занят");
+                        //если всё правильно - создание нового пользователя-пациента
+                        else
+                        {
+                            DataHandler.AddPatient(login, fio, email, password, gender, oms, null, birthdate, address, phone);
+                            return DataHandler.GetPatient(login);
+                        }
                     }
                 }
 
@@ -133,6 +139,45 @@ namespace PolyclinicSystem
             }
 
             return null;
+        }
+
+        //определение типа пользователя
+        static public string DefineUser(User user)
+        {
+            if (user.Doctors.Count > 0)
+                return "doctor";
+            else if (user.Patients.Count > 0)
+                return "patient";
+            else return "admin";
+        }
+
+        //задание текущего пользователя
+        static public void SetUser(User user, string usertype)
+        {
+            try
+            {
+                if (usertype == "doctor")
+                    MainForm.CurDoctor = DataHandler.GetDoctor(user.Login);
+                else if (usertype == "patient")
+                    MainForm.CurPatient = DataHandler.GetPatient(user.Login);
+                else
+                    MainForm.CurAdmin = DataHandler.GetAdmin(user.Login);
+                MainForm.currentUser = usertype;
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+            }
+            
+        }
+
+        //убрать текущего пользователя
+        static public void LogoutUser()
+        {
+            MainForm.currentUser = "";
+            MainForm.CurAdmin = null;
+            MainForm.CurDoctor = null;
+            MainForm.CurPatient = null;
         }
 
         //проверка пустоты значения строки

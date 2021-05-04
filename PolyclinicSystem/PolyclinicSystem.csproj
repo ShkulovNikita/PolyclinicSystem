@@ -77,6 +77,24 @@
     <Compile Include="Classes\PatientCard.cs" />
     <Compile Include="Classes\Specialty.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="Forms\Profiles\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profiles\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profiles\DoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profiles\DoctorForm.Designer.cs">
+      <DependentUpon>DoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profiles\PatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profiles\PatientForm.Designer.cs">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>

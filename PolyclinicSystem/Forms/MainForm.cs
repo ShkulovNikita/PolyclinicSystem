@@ -16,6 +16,12 @@ namespace PolyclinicSystem
 {
     public partial class MainForm : Form
     {
+        static public Patient CurPatient;
+        static public Doctor CurDoctor;
+        static public Administrator CurAdmin;
+
+        static public string currentUser = "";
+
         public MainForm()
         {
             InitializeComponent();
@@ -45,12 +51,36 @@ namespace PolyclinicSystem
                 User user = Authorization.SignIn(loginTextBox.Text, passwordTextBox.Text);
                 if (user != null)
                 {
-                    loginTextBox.Text = "Вход выполнен: " + user.Name;
+                    //определить, кем является пользователь
+                    string userType = Authorization.DefineUser(user);
+                    //установить текущего пользователя
+                    Authorization.SetUser(user, userType);
+                    //переход к соответствующему профилю
+                    if (userType == "patient")
+                    {
+                        PatientForm patientForm = new PatientForm();
+                        patientForm.Show();
+                    }
+                    else if (userType == "doctor")
+                    {
+                        DoctorForm doctorForm = new DoctorForm();
+                        doctorForm.Show();
+                    }
+                    else if (userType == "admin")
+                    {
+                        AdminForm adminForm = new AdminForm();
+                        adminForm.Show();
+                    }
+                    Visible = false;
+                }
+                else
+                {
+                    ErrorHandler.ShowError("Пользователь не найден");
                 }
             }
             catch (Exception ex)
             {
-                ErrorHandler.ShowError(ex);
+                Logger.WriteLog(ex);
             }
         }
 
