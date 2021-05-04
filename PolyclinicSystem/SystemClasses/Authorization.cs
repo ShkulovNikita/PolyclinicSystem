@@ -31,7 +31,7 @@ namespace PolyclinicSystem
             }
             catch (Exception ex)
             {
-                ErrorHandler.ShowError(ex);
+                Logger.WriteLog(ex);
                 return null;
             }
 

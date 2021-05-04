@@ -18,6 +18,7 @@ namespace PolyclinicSystem
         public MainForm()
         {
             InitializeComponent();
+            Logger.ActivateLogger();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
