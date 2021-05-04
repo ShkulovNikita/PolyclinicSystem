@@ -11,7 +11,7 @@ namespace PolyclinicSystem
 {
     static public class DataHandler
     {
-        static readonly string DBFile = "Polyclinic.db";
+        static public readonly string DBFile = "Polyclinic.db";
 
         static private void AddToDatabase(object obj)
         {
@@ -28,7 +28,7 @@ namespace PolyclinicSystem
             }
         }
 
-        static private void UpdateInDatabase(object obj)
+        static public void UpdateInDatabase(object obj)
         {
             try
             {

@@ -41,16 +41,16 @@ namespace PolyclinicSystem.Forms
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.loginTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.fioTextBox = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.omsTextBox = new System.Windows.Forms.TextBox();
+            this.phoneTextBox = new System.Windows.Forms.TextBox();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
             this.maleRadioButton = new System.Windows.Forms.RadioButton();
             this.femaleRadioButton = new System.Windows.Forms.RadioButton();
             this.birthdateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.signUpButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -185,74 +185,74 @@ namespace PolyclinicSystem.Forms
             this.loginTextBox.Size = new System.Drawing.Size(292, 30);
             this.loginTextBox.TabIndex = 14;
             // 
-            // textBox1
+            // emailTextBox
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(193, 154);
-            this.textBox1.MaximumSize = new System.Drawing.Size(292, 30);
-            this.textBox1.MinimumSize = new System.Drawing.Size(292, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 30);
-            this.textBox1.TabIndex = 15;
+            this.emailTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.emailTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.emailTextBox.Location = new System.Drawing.Point(193, 154);
+            this.emailTextBox.MaximumSize = new System.Drawing.Size(292, 30);
+            this.emailTextBox.MinimumSize = new System.Drawing.Size(292, 30);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(292, 30);
+            this.emailTextBox.TabIndex = 15;
             // 
-            // textBox2
+            // fioTextBox
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(193, 198);
-            this.textBox2.MaximumSize = new System.Drawing.Size(292, 30);
-            this.textBox2.MinimumSize = new System.Drawing.Size(292, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(292, 30);
-            this.textBox2.TabIndex = 16;
+            this.fioTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.fioTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.fioTextBox.Location = new System.Drawing.Point(193, 198);
+            this.fioTextBox.MaximumSize = new System.Drawing.Size(292, 30);
+            this.fioTextBox.MinimumSize = new System.Drawing.Size(292, 30);
+            this.fioTextBox.Name = "fioTextBox";
+            this.fioTextBox.Size = new System.Drawing.Size(292, 30);
+            this.fioTextBox.TabIndex = 16;
             // 
-            // textBox3
+            // passwordTextBox
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(193, 241);
-            this.textBox3.MaximumSize = new System.Drawing.Size(292, 30);
-            this.textBox3.MinimumSize = new System.Drawing.Size(292, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '●';
-            this.textBox3.Size = new System.Drawing.Size(292, 30);
-            this.textBox3.TabIndex = 17;
+            this.passwordTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.passwordTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.passwordTextBox.Location = new System.Drawing.Point(193, 241);
+            this.passwordTextBox.MaximumSize = new System.Drawing.Size(292, 30);
+            this.passwordTextBox.MinimumSize = new System.Drawing.Size(292, 30);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '●';
+            this.passwordTextBox.Size = new System.Drawing.Size(292, 30);
+            this.passwordTextBox.TabIndex = 17;
             // 
-            // textBox4
+            // omsTextBox
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(193, 287);
-            this.textBox4.MaximumSize = new System.Drawing.Size(292, 30);
-            this.textBox4.MaxLength = 16;
-            this.textBox4.MinimumSize = new System.Drawing.Size(292, 30);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(292, 30);
-            this.textBox4.TabIndex = 18;
+            this.omsTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.omsTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.omsTextBox.Location = new System.Drawing.Point(193, 287);
+            this.omsTextBox.MaximumSize = new System.Drawing.Size(292, 30);
+            this.omsTextBox.MaxLength = 16;
+            this.omsTextBox.MinimumSize = new System.Drawing.Size(292, 30);
+            this.omsTextBox.Name = "omsTextBox";
+            this.omsTextBox.Size = new System.Drawing.Size(292, 30);
+            this.omsTextBox.TabIndex = 18;
             // 
-            // textBox5
+            // phoneTextBox
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(193, 333);
-            this.textBox5.MaximumSize = new System.Drawing.Size(292, 30);
-            this.textBox5.MaxLength = 11;
-            this.textBox5.MinimumSize = new System.Drawing.Size(292, 30);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(292, 30);
-            this.textBox5.TabIndex = 19;
+            this.phoneTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.phoneTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.phoneTextBox.Location = new System.Drawing.Point(193, 333);
+            this.phoneTextBox.MaximumSize = new System.Drawing.Size(292, 30);
+            this.phoneTextBox.MaxLength = 11;
+            this.phoneTextBox.MinimumSize = new System.Drawing.Size(292, 30);
+            this.phoneTextBox.Name = "phoneTextBox";
+            this.phoneTextBox.Size = new System.Drawing.Size(292, 30);
+            this.phoneTextBox.TabIndex = 19;
             // 
-            // textBox6
+            // addressTextBox
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(193, 379);
-            this.textBox6.MaximumSize = new System.Drawing.Size(292, 30);
-            this.textBox6.MinimumSize = new System.Drawing.Size(292, 30);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(292, 30);
-            this.textBox6.TabIndex = 20;
+            this.addressTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addressTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addressTextBox.Location = new System.Drawing.Point(193, 379);
+            this.addressTextBox.MaximumSize = new System.Drawing.Size(292, 30);
+            this.addressTextBox.MinimumSize = new System.Drawing.Size(292, 30);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(292, 30);
+            this.addressTextBox.TabIndex = 20;
             // 
             // maleRadioButton
             // 
@@ -287,32 +287,32 @@ namespace PolyclinicSystem.Forms
             this.birthdateTimePicker.Size = new System.Drawing.Size(292, 22);
             this.birthdateTimePicker.TabIndex = 23;
             // 
-            // button1
+            // signUpButton
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(193, 503);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 33);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Зарегистрироваться";
-            this.button1.UseVisualStyleBackColor = true;
+            this.signUpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.signUpButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.signUpButton.Location = new System.Drawing.Point(193, 503);
+            this.signUpButton.Name = "signUpButton";
+            this.signUpButton.Size = new System.Drawing.Size(197, 33);
+            this.signUpButton.TabIndex = 24;
+            this.signUpButton.Text = "Зарегистрироваться";
+            this.signUpButton.UseVisualStyleBackColor = true;
             // 
             // SignUpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(527, 568);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.signUpButton);
             this.Controls.Add(this.birthdateTimePicker);
             this.Controls.Add(this.femaleRadioButton);
             this.Controls.Add(this.maleRadioButton);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.addressTextBox);
+            this.Controls.Add(this.phoneTextBox);
+            this.Controls.Add(this.omsTextBox);
+            this.Controls.Add(this.passwordTextBox);
+            this.Controls.Add(this.fioTextBox);
+            this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.loginTextBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -348,15 +348,15 @@ namespace PolyclinicSystem.Forms
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox loginTextBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox fioTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox omsTextBox;
+        private System.Windows.Forms.TextBox phoneTextBox;
+        private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.RadioButton maleRadioButton;
         private System.Windows.Forms.RadioButton femaleRadioButton;
         private System.Windows.Forms.DateTimePicker birthdateTimePicker;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button signUpButton;
     }
 }

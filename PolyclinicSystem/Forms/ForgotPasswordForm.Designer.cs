@@ -153,6 +153,7 @@ namespace PolyclinicSystem.Forms
             this.changePasswordButton.TabIndex = 9;
             this.changePasswordButton.Text = "Подтвердить";
             this.changePasswordButton.UseVisualStyleBackColor = true;
+            this.changePasswordButton.Click += new System.EventHandler(this.changePasswordButton_Click);
             // 
             // panel1
             // 

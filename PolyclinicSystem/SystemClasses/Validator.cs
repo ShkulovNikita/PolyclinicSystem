@@ -4,6 +4,12 @@ namespace PolyclinicSystem
 {
     static public class Validator
     {
+        static public bool CheckEmail(string email)
+        {
+            string pattern = @"\w+@\w+\.\w+$";
+            return Regex.IsMatch(email, pattern);
+        }
+
         static public bool CheckOMS(string oms)
         {
             string pattern = @"^\d{16}$";

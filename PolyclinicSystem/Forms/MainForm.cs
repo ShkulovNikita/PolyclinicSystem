@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PolyclinicSystem.Forms;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 using SQLiteNetExtensions.Extensions;
@@ -58,13 +59,36 @@ namespace PolyclinicSystem
         //нажатие на кнопку регистрации
         private void signUpButton_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+            }
         }
 
         //восстановление пароля
         private void forgotPasswordLabel_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ForgotPasswordForm form = new ForgotPasswordForm();
+                form.FormClosed += ForgotPasswordForm_FormClosed;
+                form.Show();
+                Visible = false;
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+            }
+        }
 
+        //отреагировать на закрытие формы смены пароля
+        private void ForgotPasswordForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Visible = true;
         }
     }
 }
