@@ -55,7 +55,7 @@ namespace PolyclinicSystem
             // 
             this.loginTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.loginTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loginTextBox.Location = new System.Drawing.Point(85, 169);
+            this.loginTextBox.Location = new System.Drawing.Point(90, 173);
             this.loginTextBox.MaximumSize = new System.Drawing.Size(292, 30);
             this.loginTextBox.MinimumSize = new System.Drawing.Size(292, 30);
             this.loginTextBox.Name = "loginTextBox";
@@ -66,7 +66,7 @@ namespace PolyclinicSystem
             // 
             this.passwordTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.passwordTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.passwordTextBox.Location = new System.Drawing.Point(85, 243);
+            this.passwordTextBox.Location = new System.Drawing.Point(90, 247);
             this.passwordTextBox.MaximumSize = new System.Drawing.Size(292, 30);
             this.passwordTextBox.MinimumSize = new System.Drawing.Size(292, 30);
             this.passwordTextBox.Name = "passwordTextBox";
@@ -79,7 +79,7 @@ namespace PolyclinicSystem
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(144, 85);
+            this.label1.Location = new System.Drawing.Point(144, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 28);
             this.label1.TabIndex = 3;
@@ -90,7 +90,7 @@ namespace PolyclinicSystem
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(195, 137);
+            this.label2.Location = new System.Drawing.Point(200, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 19);
             this.label2.TabIndex = 4;
@@ -101,7 +101,7 @@ namespace PolyclinicSystem
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(195, 211);
+            this.label3.Location = new System.Drawing.Point(200, 215);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 19);
             this.label3.TabIndex = 5;
@@ -110,9 +110,10 @@ namespace PolyclinicSystem
             // signInButton
             // 
             this.signInButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.signInButton.Location = new System.Drawing.Point(149, 309);
+            this.signInButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.signInButton.Location = new System.Drawing.Point(149, 312);
             this.signInButton.Name = "signInButton";
-            this.signInButton.Size = new System.Drawing.Size(163, 34);
+            this.signInButton.Size = new System.Drawing.Size(184, 36);
             this.signInButton.TabIndex = 6;
             this.signInButton.Text = "Войти";
             this.signInButton.UseVisualStyleBackColor = true;
@@ -121,29 +122,32 @@ namespace PolyclinicSystem
             // signUpButton
             // 
             this.signUpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.signUpButton.Location = new System.Drawing.Point(149, 349);
+            this.signUpButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.signUpButton.Location = new System.Drawing.Point(149, 354);
             this.signUpButton.Name = "signUpButton";
-            this.signUpButton.Size = new System.Drawing.Size(163, 34);
+            this.signUpButton.Size = new System.Drawing.Size(184, 36);
             this.signUpButton.TabIndex = 7;
             this.signUpButton.Text = "Зарегистрироваться";
             this.signUpButton.UseVisualStyleBackColor = true;
+            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
             // 
             // forgotPasswordLabel
             // 
             this.forgotPasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.forgotPasswordLabel.AutoSize = true;
             this.forgotPasswordLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.forgotPasswordLabel.Location = new System.Drawing.Point(175, 280);
+            this.forgotPasswordLabel.Location = new System.Drawing.Point(180, 284);
             this.forgotPasswordLabel.Name = "forgotPasswordLabel";
             this.forgotPasswordLabel.Size = new System.Drawing.Size(118, 17);
             this.forgotPasswordLabel.TabIndex = 8;
             this.forgotPasswordLabel.Text = "Забыли пароль?";
+            this.forgotPasswordLabel.Click += new System.EventHandler(this.forgotPasswordLabel_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 406);
+            this.ClientSize = new System.Drawing.Size(484, 414);
             this.Controls.Add(this.forgotPasswordLabel);
             this.Controls.Add(this.signUpButton);
             this.Controls.Add(this.signInButton);

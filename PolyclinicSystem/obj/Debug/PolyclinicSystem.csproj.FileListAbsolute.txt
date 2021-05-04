@@ -22,3 +22,5 @@ D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.csproj.CoreC
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.csproj.CopyComplete
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.exe
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.pdb
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.ForgotPasswordForm.resources
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.SignUpForm.resources

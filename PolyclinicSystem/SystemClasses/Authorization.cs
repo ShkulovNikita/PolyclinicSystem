@@ -38,6 +38,5 @@ namespace PolyclinicSystem
             return null;
         }
 
-        
     }
 }

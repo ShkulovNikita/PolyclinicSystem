@@ -52,5 +52,17 @@ namespace PolyclinicSystem
                 ErrorHandler.ShowError(ex);
             }
         }
+
+        //нажатие на кнопку регистрации
+        private void signUpButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //восстановление пароля
+        private void forgotPasswordLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
