@@ -24,8 +24,6 @@ namespace PolyclinicSystem
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
-
             try
             {
                 using (SQLiteConnection db = new SQLiteConnection("Polyclinic.db"))
@@ -61,7 +59,10 @@ namespace PolyclinicSystem
         {
             try
             {
-
+                SignUpForm signUpForm = new SignUpForm();
+                signUpForm.FormClosed += SignUpForm_FormClosed;
+                signUpForm.Show();
+                Visible = false;
             }
             catch (Exception ex)
             {
@@ -87,6 +88,12 @@ namespace PolyclinicSystem
 
         //отреагировать на закрытие формы смены пароля
         private void ForgotPasswordForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Visible = true;
+        }
+
+        //отреагировать на закрытие формы регистрации
+        private void SignUpForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Visible = true;
         }
