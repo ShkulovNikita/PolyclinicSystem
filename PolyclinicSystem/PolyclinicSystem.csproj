@@ -77,6 +77,18 @@
     <Compile Include="Classes\PatientCard.cs" />
     <Compile Include="Classes\Specialty.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="Forms\Functions\AddVisitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Functions\AddVisitForm.Designer.cs">
+      <DependentUpon>AddVisitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Functions\VisitsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Functions\VisitsListForm.Designer.cs">
+      <DependentUpon>VisitsListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Profiles\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,25 +107,25 @@
     <Compile Include="Forms\Profiles\PatientForm.Designer.cs">
       <DependentUpon>PatientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SignUpForm.cs">
+    <Compile Include="Forms\Authorization\SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SignUpForm.Designer.cs">
+    <Compile Include="Forms\Authorization\SignUpForm.Designer.cs">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ForgotPasswordForm.cs">
+    <Compile Include="Forms\Authorization\ForgotPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ForgotPasswordForm.Designer.cs">
+    <Compile Include="Forms\Authorization\ForgotPasswordForm.Designer.cs">
       <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SystemClasses\Authorization.cs" />
     <Compile Include="SystemClasses\DataHandler.cs" />
     <Compile Include="SystemClasses\ErrorHandler.cs" />
-    <Compile Include="Forms\MainForm.cs">
+    <Compile Include="Forms\Authorization\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MainForm.Designer.cs">
+    <Compile Include="Forms\Authorization\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -121,14 +133,24 @@
     <Compile Include="SystemClasses\Logger.cs" />
     <Compile Include="SystemClasses\MessagesHandler.cs" />
     <Compile Include="SystemClasses\Validator.cs" />
-    <EmbeddedResource Include="Forms\MainForm.resx">
+    <Compile Include="SystemClasses\VisitsHandler.cs" />
+    <EmbeddedResource Include="Forms\Authorization\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ForgotPasswordForm.resx">
+    <EmbeddedResource Include="Forms\Authorization\ForgotPasswordForm.resx">
       <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SignUpForm.resx">
+    <EmbeddedResource Include="Forms\Authorization\SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Functions\AddVisitForm.resx">
+      <DependentUpon>AddVisitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Functions\VisitsListForm.resx">
+      <DependentUpon>VisitsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profiles\PatientForm.resx">
+      <DependentUpon>PatientForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

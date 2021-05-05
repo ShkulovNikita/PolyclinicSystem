@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SQLite;
-using SQLiteNetExtensions.Attributes;
 using SQLiteNetExtensions.Extensions;
 
 namespace PolyclinicSystem
@@ -175,7 +172,6 @@ namespace PolyclinicSystem
                     spec.Doctors = new List<Doctor> { doctor };
                 else
                     spec.Doctors.Add(doctor);
-
                 UpdateInDatabase(spec);
             }            
             catch(Exception ex)
@@ -311,6 +307,24 @@ namespace PolyclinicSystem
             }
         }
 
+        static public Specialty GetSpecialtyByDoctor(int doctorID)
+        {
+            try
+            {
+                using(SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    Doctor doctor = db.Query<Doctor>("SELECT * FROM Doctor WHERE DoctorID = ?", doctorID).First();
+                    Specialty spec = db.Query<Specialty>("SELECT * FROM Specialty WHERE ID = ?", doctor.SpecialtyID).First();
+                    return spec;
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.ShowError(ex);
+                return null;
+            }
+        }
+
         static public Patient GetPatient(string login)
         {
             try
@@ -346,6 +360,23 @@ namespace PolyclinicSystem
             }
         }
 
+        static public PatientCard GetPatientCardByPatient(int id)
+        {
+            try
+            {
+                using(SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    PatientCard card = db.Query<PatientCard>("SELECT * FROM PatientCard WHERE PatientID = ?", id).First();
+                    return db.GetWithChildren<PatientCard>(card.CardID);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+        }
+
         static public Doctor GetDoctor(string login)
         {
             try
@@ -364,6 +395,67 @@ namespace PolyclinicSystem
             }
         }
 
+        static public Doctor GetDoctor(int ID)
+        {
+            try
+            {
+                using(SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    return db.GetWithChildren<Doctor>(ID);
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.ShowError(ex);
+                return null;
+            }
+        }
+
+        static public List<DoctorVisit> GetVisitsByPatient(int id)
+        {
+            try
+            {
+                //получить карту текущего пациента
+                PatientCard card = GetPatientCardByPatient(id);
+
+                //список приемов текущего пациента
+                List<DoctorVisit> visits;
+
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    visits = db.GetAllWithChildren<DoctorVisit>();
+                    visits = visits.Where(i => i.PatientCardID == card.CardID).ToList();
+                }
+
+                return visits;
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+        }
+
+        static public List<DoctorVisit> GetVisitsByDoctor(int id)
+        {
+            try
+            {
+                List<DoctorVisit> visits;
+
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    visits = db.Query<DoctorVisit>("SELECT * FROM DoctorVisit WHERE DoctorID = ?", id).ToList();
+                }
+
+                return visits;
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+        }
+
         static public Administrator GetAdmin(string login)
         {
             try
@@ -374,6 +466,26 @@ namespace PolyclinicSystem
                     Administrator admin = db.Query<Administrator>("SELECT * FROM Administrator WHERE UserId = ?", user.ID).First();
                     return db.GetWithChildren<Administrator>(admin.AdminID);
                 }
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+        }
+
+        static public List<Doctor> GetDoctors()
+        {
+            try
+            {
+                List<Doctor> doctors;
+
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    doctors = db.GetAllWithChildren<Doctor>();
+                }
+
+                return doctors;
             }
             catch (Exception ex)
             {

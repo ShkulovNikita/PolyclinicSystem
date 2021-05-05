@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PolyclinicSystem
 {
@@ -125,7 +121,12 @@ namespace PolyclinicSystem
                         //если всё правильно - создание нового пользователя-пациента
                         else
                         {
+                            //создание пациента
                             DataHandler.AddPatient(login, fio, email, password, gender, oms, null, birthdate, address, phone);
+                            //задание ему карточки
+                            string cardNumber = GenerateCardNumber();
+                            DataHandler.AddPatientCard(login, cardNumber);
+
                             return DataHandler.GetPatient(login);
                         }
                     }
@@ -139,6 +140,16 @@ namespace PolyclinicSystem
             }
 
             return null;
+        }
+
+        //создать номер карточки пациента
+        static private string GenerateCardNumber()
+        {
+            Random rnd = new Random();
+            string number = rnd.Next(10).ToString() + rnd.Next(10).ToString() 
+                                                    + rnd.Next(10).ToString() + rnd.Next(10).ToString() 
+                                                    + rnd.Next(10).ToString();
+            return number;
         }
 
         //определение типа пользователя

@@ -1,0 +1,8 @@
+﻿----------------------------
+05.05.2021 14:58:46
+System.Exception: Не удалось загрузить таблицу
+   в PolyclinicSystem.Forms.Functions.VisitsListForm.VisitsListForm_Load(Object sender, EventArgs e) в D:\git\PolyclinicSystem\PolyclinicSystem\Forms\Functions\VisitsListForm.cs:строка 45
+----------------------------
+05.05.2021 15:00:01
+System.Exception: Не удалось загрузить таблицу
+   в PolyclinicSystem.Forms.Functions.VisitsListForm.VisitsListForm_Load(Object sender, EventArgs e) в D:\git\PolyclinicSystem\PolyclinicSystem\Forms\Functions\VisitsListForm.cs:строка 45

@@ -24,3 +24,6 @@ D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.exe
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.pdb
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.ForgotPasswordForm.resources
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.SignUpForm.resources
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Functions.VisitsListForm.resources
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.PatientForm.resources
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Functions.AddVisitForm.resources

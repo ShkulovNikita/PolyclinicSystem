@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using PolyclinicSystem.Forms;
 using SQLite;
-using SQLiteNetExtensions.Attributes;
-using SQLiteNetExtensions.Extensions;
 
 namespace PolyclinicSystem
 {
@@ -30,6 +21,9 @@ namespace PolyclinicSystem
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            loginTextBox.Text = "domin";
+            passwordTextBox.Text = "123456";
+
             try
             {
                 using (SQLiteConnection db = new SQLiteConnection("Polyclinic.db"))
@@ -59,23 +53,22 @@ namespace PolyclinicSystem
                     if (userType == "patient")
                     {
                         PatientForm patientForm = new PatientForm();
+                        patientForm.FormClosed += UserForm_FormClosed;
                         patientForm.Show();
                     }
                     else if (userType == "doctor")
                     {
                         DoctorForm doctorForm = new DoctorForm();
+                        doctorForm.FormClosed += UserForm_FormClosed;
                         doctorForm.Show();
                     }
                     else if (userType == "admin")
                     {
                         AdminForm adminForm = new AdminForm();
+                        adminForm.FormClosed += UserForm_FormClosed;
                         adminForm.Show();
                     }
                     Visible = false;
-                }
-                else
-                {
-                    ErrorHandler.ShowError("Пользователь не найден");
                 }
             }
             catch (Exception ex)
@@ -127,5 +120,13 @@ namespace PolyclinicSystem
         {
             Visible = true;
         }
+
+        //закрытие форм пользователей ведет к выходу из приложения
+        private void UserForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Authorization.LogoutUser();
+            Close();
+        }
+
     }
 }

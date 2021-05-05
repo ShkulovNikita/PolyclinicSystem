@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PolyclinicSystem.Forms.Functions;
 
 namespace PolyclinicSystem.Forms
 {
@@ -15,6 +16,12 @@ namespace PolyclinicSystem.Forms
         public PatientForm()
         {
             InitializeComponent();
+        }
+
+        private void visitsButton_Click(object sender, EventArgs e)
+        {
+            VisitsListForm visitsForm = new VisitsListForm();
+            visitsForm.Show();
         }
     }
 }
