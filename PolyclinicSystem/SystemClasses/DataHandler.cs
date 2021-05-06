@@ -307,6 +307,24 @@ namespace PolyclinicSystem
             }
         }
 
+        static public List<Specialty> GetSpecialties()
+        {
+            try
+            {
+                List<Specialty> specialties;
+
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                    specialties = db.GetAllWithChildren<Specialty>();
+
+                return specialties;
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+        }
+
         static public Specialty GetSpecialtyByDoctor(int doctorID)
         {
             try

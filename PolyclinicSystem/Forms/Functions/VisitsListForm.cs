@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PolyclinicSystem.Forms.Functions
@@ -39,6 +33,7 @@ namespace PolyclinicSystem.Forms.Functions
                         else
                             visitsDataGrid.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     }
+                    visitsDataGrid.Columns[0].Visible = false;
 
                     //добавить данные
                     visitsDataGrid.DataSource = VisitsHandler.FillData(MainForm.currentUser, dt);
@@ -69,6 +64,14 @@ namespace PolyclinicSystem.Forms.Functions
         {
             //обновить таблицу приемов
             visitsDataGrid.DataSource = VisitsHandler.FillData(MainForm.currentUser, dt);
+        }
+
+        //выполнение поиска
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            string query = searchTextBox.Text;
+            //выполнить поиск и обновить таблицу
+            visitsDataGrid.DataSource = VisitsHandler.Search(MainForm.currentUser, query, dt);
         }
     }
 }

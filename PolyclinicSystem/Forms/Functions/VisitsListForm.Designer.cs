@@ -52,6 +52,7 @@ namespace PolyclinicSystem.Forms.Functions
             // 
             // searchTextBox
             // 
+            this.searchTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.searchTextBox.Location = new System.Drawing.Point(92, 69);
             this.searchTextBox.Name = "searchTextBox";
@@ -60,16 +61,19 @@ namespace PolyclinicSystem.Forms.Functions
             // 
             // searchButton
             // 
+            this.searchButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchButton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.searchButton.Location = new System.Drawing.Point(697, 69);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(91, 30);
             this.searchButton.TabIndex = 3;
-            this.searchButton.Text = "button1";
+            this.searchButton.Text = "Поиск";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(12, 73);
@@ -80,6 +84,7 @@ namespace PolyclinicSystem.Forms.Functions
             // 
             // visitsDataGrid
             // 
+            this.visitsDataGrid.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.visitsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.visitsDataGrid.Location = new System.Drawing.Point(12, 118);
             this.visitsDataGrid.Name = "visitsDataGrid";
@@ -90,6 +95,7 @@ namespace PolyclinicSystem.Forms.Functions
             // 
             // infoButton
             // 
+            this.infoButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.infoButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.infoButton.Location = new System.Drawing.Point(649, 457);
             this.infoButton.Name = "infoButton";
@@ -100,6 +106,7 @@ namespace PolyclinicSystem.Forms.Functions
             // 
             // addVisit
             // 
+            this.addVisit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.addVisit.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.addVisit.Location = new System.Drawing.Point(12, 457);
             this.addVisit.Name = "addVisit";
@@ -121,8 +128,9 @@ namespace PolyclinicSystem.Forms.Functions
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.panel1);
+            this.MinimumSize = new System.Drawing.Size(818, 556);
             this.Name = "VisitsListForm";
-            this.Text = "VisitsListForm";
+            this.Text = "Приемы у врачей";
             this.Load += new System.EventHandler(this.VisitsListForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.visitsDataGrid)).EndInit();
             this.ResumeLayout(false);
