@@ -75,6 +75,7 @@ namespace PolyclinicSystem.Forms.Functions
             this.Controls.Add(this.panel2);
             this.Name = "VisitInfoForm";
             this.Text = "VisitInfoForm";
+            this.Load += new System.EventHandler(this.VisitInfoForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

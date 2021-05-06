@@ -83,6 +83,24 @@
     <Compile Include="Forms\Functions\AddVisitForm.Designer.cs">
       <DependentUpon>AddVisitForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Functions\AddVisitInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Functions\AddVisitInfoForm.Designer.cs">
+      <DependentUpon>AddVisitInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Functions\VisitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Functions\VisitForm.Designer.cs">
+      <DependentUpon>VisitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Functions\VisitInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Functions\VisitInfoForm.Designer.cs">
+      <DependentUpon>VisitInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Functions\VisitsListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +163,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Functions\AddVisitForm.resx">
       <DependentUpon>AddVisitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Functions\AddVisitInfoForm.resx">
+      <DependentUpon>AddVisitInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Functions\VisitForm.resx">
+      <DependentUpon>VisitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Functions\VisitInfoForm.resx">
+      <DependentUpon>VisitInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Functions\VisitsListForm.resx">
       <DependentUpon>VisitsListForm.cs</DependentUpon>

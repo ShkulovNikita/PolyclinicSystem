@@ -27,3 +27,6 @@ D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.SignUp
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Functions.VisitsListForm.resources
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.PatientForm.resources
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Functions.AddVisitForm.resources
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Functions.AddVisitInfoForm.resources
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Functions.VisitForm.resources
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Functions.VisitInfoForm.resources

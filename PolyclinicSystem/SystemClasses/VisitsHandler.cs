@@ -119,22 +119,6 @@ namespace PolyclinicSystem
             }
         }
 
-        //записаться на прием текущему пациенту
-        static public string AddVisit(string date, string doctorLogin, Patient patient)
-        {
-            try
-            {
-                PatientCard card = DataHandler.GetPatientCardByPatient(patient.PatientID);
-                DataHandler.AddDoctorVisit(doctorLogin, card.CardNumber, date);
-                return "записан";
-            }
-            catch (Exception ex)
-            {
-                Logger.WriteLog(ex);
-                return "ошибка";
-            }
-        }
-
         //выполнение поиска
         static public DataTable Search(string usertype, string query, DataTable dt)
         {

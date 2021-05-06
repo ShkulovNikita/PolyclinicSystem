@@ -128,13 +128,21 @@ namespace PolyclinicSystem.Forms.Functions
         {
             try
             {
-                //добавить новый прием у врача
-                string doctorLogin = chosenDoctor.User.Login;
-                string cardNumber = MainForm.CurPatient.PatientCards[0].CardNumber;
-                DataHandler.AddDoctorVisit(doctorLogin, cardNumber, chosenDate);
+                if (visitTypeComboBox.SelectedItem == null)
+                {
+                    messagesLabel.Text = "Не выбран тип приема";
+                }
+                else
+                {
+                    //добавить новый прием у врача
+                    string doctorLogin = chosenDoctor.User.Login;
+                    string cardNumber = MainForm.CurPatient.PatientCards[0].CardNumber;
+                    string type = visitTypeComboBox.SelectedItem.ToString();
+                    DataHandler.AddDoctorVisit(doctorLogin, cardNumber, chosenDate, type);
 
-                //закрыть окно
-                Close();
+                    //закрыть окно
+                    Close();
+                }
             }
             catch(Exception ex)
             {
@@ -142,7 +150,6 @@ namespace PolyclinicSystem.Forms.Functions
                 ErrorHandler.ShowError("Не удалось добавить прием");
                 Close();
             }
-            
         }
     }
 }

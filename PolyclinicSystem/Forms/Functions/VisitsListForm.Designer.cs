@@ -87,6 +87,7 @@ namespace PolyclinicSystem.Forms.Functions
             this.visitsDataGrid.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.visitsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.visitsDataGrid.Location = new System.Drawing.Point(12, 118);
+            this.visitsDataGrid.MultiSelect = false;
             this.visitsDataGrid.Name = "visitsDataGrid";
             this.visitsDataGrid.RowHeadersWidth = 51;
             this.visitsDataGrid.RowTemplate.Height = 24;
@@ -97,12 +98,13 @@ namespace PolyclinicSystem.Forms.Functions
             // 
             this.infoButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.infoButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.infoButton.Location = new System.Drawing.Point(649, 457);
+            this.infoButton.Location = new System.Drawing.Point(526, 457);
             this.infoButton.Name = "infoButton";
-            this.infoButton.Size = new System.Drawing.Size(139, 40);
+            this.infoButton.Size = new System.Drawing.Size(262, 40);
             this.infoButton.TabIndex = 6;
-            this.infoButton.Text = "button2";
+            this.infoButton.Text = "Информация о приеме";
             this.infoButton.UseVisualStyleBackColor = true;
+            this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
             // addVisit
             // 

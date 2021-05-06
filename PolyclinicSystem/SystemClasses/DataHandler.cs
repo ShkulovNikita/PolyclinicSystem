@@ -204,7 +204,7 @@ namespace PolyclinicSystem
             }
         }
 
-        static public void AddDoctorVisit(string doctorLogin, string cardNumber, string date)
+        static public void AddDoctorVisit(string doctorLogin, string cardNumber, string date, string type)
         {
             try
             {
@@ -212,7 +212,8 @@ namespace PolyclinicSystem
                 DoctorVisit visit = new DoctorVisit
                 {
                     Date = date,
-                    Status = "Назначен"
+                    Status = "Назначен",
+                    Type = type
                 };
                 AddToDatabase(visit);
 
@@ -442,6 +443,20 @@ namespace PolyclinicSystem
             catch (Exception ex)
             {
                 ErrorHandler.ShowError(ex);
+                return null;
+            }
+        }
+
+        static public DoctorVisit GetDoctorVisit(int ID)
+        {
+            try
+            {
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                    return db.GetWithChildren<DoctorVisit>(ID);
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
                 return null;
             }
         }
