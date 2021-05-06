@@ -89,6 +89,12 @@
     <Compile Include="Forms\Functions\AddVisitInfoForm.Designer.cs">
       <DependentUpon>AddVisitInfoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Functions\ChooseDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Functions\ChooseDateForm.Designer.cs">
+      <DependentUpon>ChooseDateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Functions\VisitForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Functions\AddVisitInfoForm.resx">
       <DependentUpon>AddVisitInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Functions\ChooseDateForm.resx">
+      <DependentUpon>ChooseDateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Functions\VisitForm.resx">
       <DependentUpon>VisitForm.cs</DependentUpon>

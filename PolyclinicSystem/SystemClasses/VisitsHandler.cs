@@ -188,5 +188,30 @@ namespace PolyclinicSystem
                 .CopyToDataTable();
             return table;
         }
+
+        //определить, свободна ли выбранная дата у врача
+        //true - свободна, false - занята
+        static public bool CheckDoctorBusyness(Doctor doctor, string date)
+        {
+            //проверка, есть ли приемы у врача
+            if (doctor.DoctorVisits.Count > 0)
+            {
+                //получить список приемов врача
+                List<DoctorVisit> visits = DataHandler.GetVisitsByDoctor(doctor.DoctorID);
+
+                //убрать завершенные и отмененные приемы
+                visits = visits.Where(i => i.Status != "Завершен" && i.Status != "Отменен").ToList();
+
+                //оставить только те, дата которых совпадает с выбранной датой
+                visits = visits.Where(i => i.Date == date).ToList();
+
+                if (visits.Count > 2)
+                    return false;
+                else
+                    return true;
+            }
+            else
+                return true;
+        }
     }
 }

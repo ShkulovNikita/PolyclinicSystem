@@ -56,6 +56,7 @@ namespace PolyclinicSystem.Forms.Functions
             this.moveButton.TabIndex = 7;
             this.moveButton.Text = "Перенести";
             this.moveButton.UseVisualStyleBackColor = true;
+            this.moveButton.Click += new System.EventHandler(this.moveButton_Click);
             // 
             // cancelButton
             // 

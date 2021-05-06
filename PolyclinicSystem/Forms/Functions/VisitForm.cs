@@ -26,6 +26,8 @@ namespace PolyclinicSystem.Forms.Functions
         {
             try
             {
+                Visit = DataHandler.GetDoctorVisit(Visit.VisitID);
+
                 dateLabel.Text = "Дата: " + Visit.Date;
                 statusLabel.Text = "Статус: " + Visit.Status;
                 typeLabel.Text = "Тип: " + Visit.Type;
@@ -78,6 +80,22 @@ namespace PolyclinicSystem.Forms.Functions
             }
             else
                 MessagesHandler.ShowMessage("Информация не введена");
+        }
+
+        //перенос на другую дату
+        private void moveButton_Click(object sender, EventArgs e)
+        {
+            Doctor doctor = DataHandler.GetDoctor(Visit.DoctorID);
+            ChooseDateForm chooseDateForm = new ChooseDateForm(doctor, Visit);
+            chooseDateForm.FormClosed += ChooseDateForm_FormClosed;
+            chooseDateForm.Show();
+        }
+
+        //закрытие формы выбора даты
+        private void ChooseDateForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //обновить информацию о приеме
+            InitializeLabels();
         }
     }
 }

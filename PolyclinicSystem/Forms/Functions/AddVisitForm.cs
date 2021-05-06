@@ -75,7 +75,7 @@ namespace PolyclinicSystem.Forms.Functions
                 Doctor chsnDoctor = GetDoctorFromList(doctorsComboBox.SelectedItem.ToString());
 
                 //определить занятость выбранного доктора в выбранный день
-                bool dayIsFree = CheckDoctorBusyness(chsnDoctor, dayOfWeek);
+                bool dayIsFree = VisitsHandler.CheckDoctorBusyness(chsnDoctor, dayOfWeek);
 
                 //если день свободен, то разрешить записаться на прием
                 if (dayIsFree)
@@ -96,31 +96,6 @@ namespace PolyclinicSystem.Forms.Functions
                 if (doctor.User.Name == name)
                     return doctor;
             return null;
-        }
-
-        //определить, свободна ли выбранная дата у врача
-        //true - свободна, false - занята
-        private bool CheckDoctorBusyness(Doctor doctor, string date)
-        {
-            //проверка, есть ли приемы у врача
-            if (doctor.DoctorVisits.Count > 0)
-            {
-                //получить список приемов врача
-                List<DoctorVisit> visits = DataHandler.GetVisitsByDoctor(doctor.DoctorID);
-
-                //убрать завершенные и отмененные приемы
-                visits = visits.Where(i => i.Status != "Завершен" && i.Status != "Отменен").ToList();
-
-                //оставить только те, дата которых совпадает с выбранной датой
-                visits = visits.Where(i => i.Date == date).ToList();
-
-                if (visits.Count > 2)
-                    return false;
-                else
-                    return true;
-            }
-            else
-                return true;
         }
 
         //нажатие на кнопку записи на прием
