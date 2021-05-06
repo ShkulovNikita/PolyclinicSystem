@@ -343,6 +343,23 @@ namespace PolyclinicSystem
             }
         }
 
+        static public Patient GetPatient(int cardID)
+        {
+            try
+            {
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    PatientCard card = db.GetWithChildren<PatientCard>(cardID);
+                    return db.GetWithChildren<Patient>(card.PatientID);
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.ShowError(ex);
+                return null;
+            }
+        }
+
         static public PatientCard GetPatientCard(string cardNumber)
         {
             try
@@ -407,6 +424,24 @@ namespace PolyclinicSystem
             catch (Exception ex)
             {
                 ErrorHandler.ShowError(ex);
+                return null;
+            }
+        }
+
+        static public List<DoctorVisit> GetVisits()
+        {
+            try
+            {
+                List<DoctorVisit> visits;
+
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                    visits = db.GetAllWithChildren<DoctorVisit>();
+
+                return visits;
+            } 
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
                 return null;
             }
         }

@@ -49,10 +49,11 @@ namespace PolyclinicSystem
 
             try
             {
+                List<DoctorVisit> visits;
                 switch(usertype)
                 {
                     case "patient":
-                        List<DoctorVisit> visits = DataHandler.GetVisitsByPatient(MainForm.CurPatient.PatientID);
+                        visits = DataHandler.GetVisitsByPatient(MainForm.CurPatient.PatientID);
                         foreach (DoctorVisit visit in visits)
                         {
                             //дата посещения
@@ -67,8 +68,32 @@ namespace PolyclinicSystem
                         }
                         break;
                     case "doctor":
+                        visits = DataHandler.GetVisitsByDoctor(MainForm.CurDoctor.DoctorID);
+                        foreach (DoctorVisit visit in visits)
+                        {
+                            //дата посещения
+                            string date = visit.Date;
+                            //ФИО пациента
+                            string name = DataHandler.GetPatient(visit.PatientCardID).User.Name;
+
+                            //добавить строку в таблицу
+                            dt.Rows.Add(date, name);
+                        }
                         break;
                     case "admin":
+                        visits = DataHandler.GetVisits();
+                        foreach (DoctorVisit visit in visits)
+                        {
+                            //дата посещения
+                            string date = visit.Date;
+                            //ФИО пациента
+                            string patName = DataHandler.GetPatient(visit.PatientCardID).User.Name;
+                            //ФИО врача
+                            string docName = DataHandler.GetDoctor(visit.DoctorID).User.Name;
+
+                            //добавить в таблицу
+                            dt.Rows.Add(date, patName, docName);
+                        }
                         break;
                 }
 

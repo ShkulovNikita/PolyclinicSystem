@@ -127,6 +127,5 @@ namespace PolyclinicSystem
             Authorization.LogoutUser();
             Close();
         }
-
     }
 }
