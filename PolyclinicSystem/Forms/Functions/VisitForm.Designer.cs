@@ -205,6 +205,7 @@ namespace PolyclinicSystem.Forms.Functions
             this.endVisitButton.TabIndex = 12;
             this.endVisitButton.Text = "Завершить прием";
             this.endVisitButton.UseVisualStyleBackColor = true;
+            this.endVisitButton.Click += new System.EventHandler(this.endVisitButton_Click);
             // 
             // VisitForm
             // 

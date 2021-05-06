@@ -124,5 +124,24 @@ namespace PolyclinicSystem.Forms.Functions
                 InitializeLabels();
             }
         }
+
+        //отметить прием как завершенный
+        private void endVisitButton_Click(object sender, EventArgs e)
+        {
+            //спросить подтверждение
+            DialogResult result = MessageBox.Show(
+                "Вы уверены, что хотите завершить прием?",
+                "Подтверждение",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
+
+            if (result == DialogResult.Yes)
+            {
+                Visit.Complete();
+                DataHandler.UpdateInDatabase(Visit);
+                InitializeLabels();
+            }
+        }
     }
 }
