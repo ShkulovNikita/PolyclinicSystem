@@ -60,6 +60,7 @@ namespace PolyclinicSystem.Forms.Functions
             this.confirmButton.TabIndex = 14;
             this.confirmButton.Text = "Сохранить";
             this.confirmButton.UseVisualStyleBackColor = true;
+            this.confirmButton.Click += new System.EventHandler(this.confirmButton_Click);
             // 
             // titleLabel
             // 
@@ -140,6 +141,7 @@ namespace PolyclinicSystem.Forms.Functions
             this.MinimumSize = new System.Drawing.Size(827, 625);
             this.Name = "AddVisitInfoForm";
             this.Text = "Записать информацию о приеме";
+            this.Load += new System.EventHandler(this.AddVisitInfoForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

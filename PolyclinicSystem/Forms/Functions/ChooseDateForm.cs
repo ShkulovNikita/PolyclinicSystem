@@ -1,20 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PolyclinicSystem.Forms.Functions
 {
     public partial class ChooseDateForm : Form
     {
-        public Doctor Doctor;
-        public string Date;
-        public DoctorVisit Visit;
+        private Doctor Doctor;
+        private string Date;
+        private DoctorVisit Visit;
 
         public ChooseDateForm(Doctor doctor, DoctorVisit visit)
         {

@@ -80,6 +80,7 @@ namespace PolyclinicSystem.Forms.Functions
             this.writeInfoButton.TabIndex = 9;
             this.writeInfoButton.Text = "Записать результаты";
             this.writeInfoButton.UseVisualStyleBackColor = true;
+            this.writeInfoButton.Click += new System.EventHandler(this.writeInfoButton_Click);
             // 
             // panel1
             // 

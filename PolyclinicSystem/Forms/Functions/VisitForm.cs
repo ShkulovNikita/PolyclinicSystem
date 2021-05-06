@@ -5,7 +5,7 @@ namespace PolyclinicSystem.Forms.Functions
 {
     public partial class VisitForm : Form
     {
-        public DoctorVisit Visit;
+        private DoctorVisit Visit;
 
         public VisitForm(DoctorVisit visit)
         {
@@ -142,6 +142,19 @@ namespace PolyclinicSystem.Forms.Functions
                 DataHandler.UpdateInDatabase(Visit);
                 InitializeLabels();
             }
+        }
+
+        //запись результатов приема
+        private void writeInfoButton_Click(object sender, EventArgs e)
+        {
+            AddVisitInfoForm addInfoForm = new AddVisitInfoForm(Visit);
+            addInfoForm.FormClosed += AddVisitInfoForm_FormClosed;
+            addInfoForm.Show();
+        }
+
+        private void AddVisitInfoForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            InitializeLabels();
         }
     }
 }
