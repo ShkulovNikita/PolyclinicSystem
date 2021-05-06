@@ -20,6 +20,14 @@ namespace PolyclinicSystem.Forms.Functions
             //если текущий пользователь - не врач, то скрыть кнопки для записи информации
             writeInfoButton.Visible = false;
             endVisitButton.Visible = false;
+            //если прием отменен или завершен, то отключить все кнопки
+            if((Visit.Status == "Отменен") || (Visit.Status == "Завершен"))
+            {
+                writeInfoButton.Enabled = false;
+                endVisitButton.Enabled = false;
+                moveButton.Enabled = false;
+                cancelButton.Enabled = false;
+            }
         }
 
         private void InitializeLabels()
@@ -96,6 +104,25 @@ namespace PolyclinicSystem.Forms.Functions
         {
             //обновить информацию о приеме
             InitializeLabels();
+        }
+
+        //отменить прием у врача
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            //спросить подтверждение
+            DialogResult result = MessageBox.Show(
+                "Вы уверены, что хотите отменить прием?",
+                "Подтверждение",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
+
+            if (result == DialogResult.Yes)
+            {
+                Visit.Cancel();
+                DataHandler.UpdateInDatabase(Visit);
+                InitializeLabels();
+            }
         }
     }
 }
