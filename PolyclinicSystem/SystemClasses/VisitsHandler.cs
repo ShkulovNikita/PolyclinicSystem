@@ -168,10 +168,13 @@ namespace PolyclinicSystem
                         {
                             DataTable dt1 = FilterData(dt, "ФИО пациента", qry);
                             DataTable dt2 = FilterData(dt, "ФИО врача", qry);
-                            dt = dt1.AsEnumerable()
+                            if ((dt1.Rows.Count > 0) || (dt2.Rows.Count > 0))
+                                dt = dt1.AsEnumerable()
                                 .Union(dt2.AsEnumerable())
                                 .Distinct()
                                 .CopyToDataTable();
+                            else
+                                dt.Rows.Clear();
                         }
                     }
                     break;
@@ -183,10 +186,19 @@ namespace PolyclinicSystem
         //фильтрация данных на основе поискового запроса
         static private DataTable FilterData(DataTable table, string field, string value)
         {
-            table = table.AsEnumerable()
+            try
+            {
+                table = table.AsEnumerable()
                 .Where(row => row.Field<string>(field) == value)
                 .CopyToDataTable();
-            return table;
+                return table;
+            } 
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                DataTable dt = table.Clone();
+                return dt;
+            }
         }
 
         //определить, свободна ли выбранная дата у врача

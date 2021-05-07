@@ -48,9 +48,9 @@ namespace PolyclinicSystem.Forms
             // 
             this.visitsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.visitsButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.visitsButton.Location = new System.Drawing.Point(467, 83);
+            this.visitsButton.Location = new System.Drawing.Point(465, 84);
             this.visitsButton.Name = "visitsButton";
-            this.visitsButton.Size = new System.Drawing.Size(150, 50);
+            this.visitsButton.Size = new System.Drawing.Size(167, 50);
             this.visitsButton.TabIndex = 0;
             this.visitsButton.Text = "Приемы у врачей";
             this.visitsButton.UseVisualStyleBackColor = true;
@@ -60,9 +60,9 @@ namespace PolyclinicSystem.Forms
             // 
             this.doctorsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.doctorsButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.doctorsButton.Location = new System.Drawing.Point(467, 149);
+            this.doctorsButton.Location = new System.Drawing.Point(465, 150);
             this.doctorsButton.Name = "doctorsButton";
-            this.doctorsButton.Size = new System.Drawing.Size(150, 50);
+            this.doctorsButton.Size = new System.Drawing.Size(167, 50);
             this.doctorsButton.TabIndex = 1;
             this.doctorsButton.Text = "Врачи";
             this.doctorsButton.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@ namespace PolyclinicSystem.Forms
             // 
             this.editProfileButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.editProfileButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.editProfileButton.Location = new System.Drawing.Point(467, 218);
+            this.editProfileButton.Location = new System.Drawing.Point(465, 219);
             this.editProfileButton.Name = "editProfileButton";
-            this.editProfileButton.Size = new System.Drawing.Size(150, 50);
+            this.editProfileButton.Size = new System.Drawing.Size(167, 50);
             this.editProfileButton.TabIndex = 2;
             this.editProfileButton.Text = "Редактировать профиль";
             this.editProfileButton.UseVisualStyleBackColor = true;
@@ -90,7 +90,7 @@ namespace PolyclinicSystem.Forms
             this.panel1.Controls.Add(this.birthdateLabel);
             this.panel1.Controls.Add(this.omsLabel);
             this.panel1.Controls.Add(this.genderLabel);
-            this.panel1.Location = new System.Drawing.Point(14, 84);
+            this.panel1.Location = new System.Drawing.Point(21, 84);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(421, 337);
             this.panel1.TabIndex = 13;
@@ -173,14 +173,14 @@ namespace PolyclinicSystem.Forms
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Location = new System.Drawing.Point(-1, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(656, 57);
+            this.panel2.Size = new System.Drawing.Size(671, 57);
             this.panel2.TabIndex = 14;
             // 
             // PatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 444);
+            this.ClientSize = new System.Drawing.Size(653, 444);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.editProfileButton);

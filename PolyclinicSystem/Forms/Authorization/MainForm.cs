@@ -23,18 +23,6 @@ namespace PolyclinicSystem
         {
             loginTextBox.Text = "domin";
             passwordTextBox.Text = "123456";
-
-            try
-            {
-                using (SQLiteConnection db = new SQLiteConnection("Polyclinic.db"))
-                {
-                    
-                }
-            }
-            catch (Exception ex)
-            {
-                ErrorHandler.ShowError(ex);
-            }
         }
 
         //нажатие на кнопку входа в профиль
@@ -125,7 +113,9 @@ namespace PolyclinicSystem
         private void UserForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Authorization.LogoutUser();
-            Close();
+            loginTextBox.Text = "";
+            passwordTextBox.Text = "";
+            Visible = true;
         }
     }
 }

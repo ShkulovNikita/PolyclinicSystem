@@ -18,8 +18,17 @@ namespace PolyclinicSystem.Forms.Functions
             //вывести информацию о приеме на форму
             InitializeLabels();
             //если текущий пользователь - не врач, то скрыть кнопки для записи информации
-            writeInfoButton.Visible = false;
-            endVisitButton.Visible = false;
+            if (MainForm.CurDoctor == null)
+            {
+                writeInfoButton.Visible = false;
+                endVisitButton.Visible = false;
+            }
+            //если зашел администратор - заблокировать кнопки
+            if (MainForm.CurAdmin != null)
+            {
+                moveButton.Enabled = false;
+                cancelButton.Enabled = false;
+            }
             //если прием отменен или завершен, то отключить все кнопки
             if((Visit.Status == "Отменен") || (Visit.Status == "Завершен"))
             {

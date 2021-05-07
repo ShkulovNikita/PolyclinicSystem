@@ -1,0 +1,156 @@
+﻿----------------------------
+08.05.2021 1:17:33
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:18:23
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:18:37
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:38:10
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:39:17
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:43:15
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:43:41
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:43:43
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:45:40
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:45:51
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:48:05
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:48:06
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:50:20
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:50:38
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:50:38
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:50:49
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:50:49
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:50:57
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:50:57
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 188
+----------------------------
+08.05.2021 1:52:37
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 191
+----------------------------
+08.05.2021 1:52:37
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 191
+----------------------------
+08.05.2021 1:53:05
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 191
+----------------------------
+08.05.2021 1:53:05
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 191
+----------------------------
+08.05.2021 1:53:50
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 191
+----------------------------
+08.05.2021 1:53:56
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 191
+----------------------------
+08.05.2021 1:53:59
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 191

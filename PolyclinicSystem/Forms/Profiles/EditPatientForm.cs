@@ -39,8 +39,12 @@ namespace PolyclinicSystem.Forms
 
             try
             {
-                ProfilesHandler.EditPatient(MainForm.CurPatient, oms, jobPlace, phone, address);
-                MessagesHandler.ShowMessage("Изменения сохранены");
+                bool result = ProfilesHandler.EditPatient(MainForm.CurPatient, oms, jobPlace, phone, address);
+                if (result)
+                {
+                    MessagesHandler.ShowMessage("Изменения сохранены");
+                    Close();
+                }
             }
             catch (Exception ex)
             {

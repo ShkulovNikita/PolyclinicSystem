@@ -112,38 +112,38 @@ namespace PolyclinicSystem.Forms
             // 
             this.omsTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.omsTextBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.omsTextBox.Location = new System.Drawing.Point(80, 76);
+            this.omsTextBox.Location = new System.Drawing.Point(114, 76);
             this.omsTextBox.MaxLength = 16;
             this.omsTextBox.Name = "omsTextBox";
-            this.omsTextBox.Size = new System.Drawing.Size(479, 27);
+            this.omsTextBox.Size = new System.Drawing.Size(445, 27);
             this.omsTextBox.TabIndex = 17;
             // 
             // phoneTextBox
             // 
             this.phoneTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.phoneTextBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.phoneTextBox.Location = new System.Drawing.Point(98, 128);
+            this.phoneTextBox.Location = new System.Drawing.Point(114, 128);
             this.phoneTextBox.MaxLength = 11;
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(461, 27);
+            this.phoneTextBox.Size = new System.Drawing.Size(445, 27);
             this.phoneTextBox.TabIndex = 18;
             // 
             // jobPlaceTextBox
             // 
             this.jobPlaceTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.jobPlaceTextBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.jobPlaceTextBox.Location = new System.Drawing.Point(141, 175);
+            this.jobPlaceTextBox.Location = new System.Drawing.Point(164, 175);
             this.jobPlaceTextBox.Name = "jobPlaceTextBox";
-            this.jobPlaceTextBox.Size = new System.Drawing.Size(418, 27);
+            this.jobPlaceTextBox.Size = new System.Drawing.Size(395, 27);
             this.jobPlaceTextBox.TabIndex = 19;
             // 
             // addressTextBox
             // 
             this.addressTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.addressTextBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addressTextBox.Location = new System.Drawing.Point(80, 222);
+            this.addressTextBox.Location = new System.Drawing.Point(114, 222);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(479, 27);
+            this.addressTextBox.Size = new System.Drawing.Size(445, 27);
             this.addressTextBox.TabIndex = 20;
             // 
             // EditPatientForm
