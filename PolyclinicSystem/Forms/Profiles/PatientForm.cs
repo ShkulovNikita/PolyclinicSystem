@@ -46,5 +46,19 @@ namespace PolyclinicSystem.Forms
             //загрузить информацию о пользователе на форму
             InitializeLabels();
         }
+
+        //открыть окно редактирования пользователя
+        private void editProfileButton_Click(object sender, EventArgs e)
+        {
+            EditPatientForm editPatientForm = new EditPatientForm();
+            editPatientForm.FormClosed += EditPatientForm_FormClosed;
+            editPatientForm.Show();
+        }
+
+        //обновление при закрытии формы редактирования профиля
+        private void EditPatientForm_FormClosed(object sender, EventArgs e)
+        {
+            InitializeLabels();
+        }
     }
 }
