@@ -35,4 +35,5 @@ D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.EditPa
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.DoctorForm.resources
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.AdminForm.resources
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Info.DoctorInfoForm.resources
-D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Info.PatientInfoForm.resources
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.PatientInfoForm.resources
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Info.UserInfoForm.resources

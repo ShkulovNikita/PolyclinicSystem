@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PolyclinicSystem.Forms.Info;
+using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace PolyclinicSystem.Forms.Functions
@@ -32,11 +34,38 @@ namespace PolyclinicSystem.Forms.Functions
             //если прием отменен или завершен, то отключить все кнопки
             if((Visit.Status == "Отменен") || (Visit.Status == "Завершен"))
             {
-                writeInfoButton.Enabled = false;
-                endVisitButton.Enabled = false;
-                moveButton.Enabled = false;
-                cancelButton.Enabled = false;
+                BlockButtons();
             }
+            //если текущий пользователь - врач, то разрешить просмотреть профиль пациента
+            if (MainForm.CurDoctor != null)
+            {
+                patientLabel.Click += PatientLabel_Click;
+                patientLabel.ForeColor = Color.Blue;
+            }
+            //если текущий пользователь - пациент, то разрешить просмотреть профиль врача
+            if (MainForm.CurPatient != null)
+            {
+                doctorLabel.Click += DoctorLabel_Click;
+                doctorLabel.ForeColor = Color.Blue;
+            }
+        }
+
+        private void PatientLabel_Click(object sender, EventArgs e)
+        {
+            //получить пациента
+            Patient patient = DataHandler.GetPatient(Visit.PatientCardID);
+            //открыть его профиль
+            PatientInfoForm patientInfoForm = new PatientInfoForm(patient);
+            patientInfoForm.Show();
+        }
+
+        private void DoctorLabel_Click(object sender, EventArgs e)
+        {
+            //получить врача
+            Doctor doctor = DataHandler.GetDoctor(Visit.DoctorID);
+            //открыть его профиль
+            DoctorInfoForm doctorInfoForm = new DoctorInfoForm(doctor);
+            doctorInfoForm.Show();
         }
 
         private void InitializeLabels()
@@ -131,7 +160,16 @@ namespace PolyclinicSystem.Forms.Functions
                 Visit.Cancel();
                 DataHandler.UpdateInDatabase(Visit);
                 InitializeLabels();
+                BlockButtons();
             }
+        }
+
+        private void BlockButtons()
+        {
+            writeInfoButton.Enabled = false;
+            endVisitButton.Enabled = false;
+            moveButton.Enabled = false;
+            cancelButton.Enabled = false;
         }
 
         //отметить прием как завершенный
@@ -150,6 +188,7 @@ namespace PolyclinicSystem.Forms.Functions
                 Visit.Complete();
                 DataHandler.UpdateInDatabase(Visit);
                 InitializeLabels();
+                BlockButtons();
             }
         }
 
