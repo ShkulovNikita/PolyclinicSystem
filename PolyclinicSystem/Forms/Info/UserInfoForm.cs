@@ -39,5 +39,18 @@ namespace PolyclinicSystem.Forms.Info
             else
                 typeLabel.Text = "Тип: администратор";
         }
+
+        //редактировать пользователя
+        private void editButton_Click(object sender, EventArgs e)
+        {
+            EditUserForm editUserForm = new EditUserForm(InfoUser);
+            editUserForm.FormClosed += EditUserForm_FormClosed;
+            editUserForm.Show();
+        }
+
+        private void EditUserForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            InitializeLabels();
+        }
     }
 }

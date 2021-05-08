@@ -31,11 +31,11 @@ namespace PolyclinicSystem.Forms.Info
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.typeLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
             this.emailLabel = new System.Windows.Forms.Label();
             this.loginLabel = new System.Windows.Forms.Label();
             this.editButton = new System.Windows.Forms.Button();
-            this.typeLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +62,16 @@ namespace PolyclinicSystem.Forms.Info
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(421, 180);
             this.panel1.TabIndex = 20;
+            // 
+            // typeLabel
+            // 
+            this.typeLabel.AutoSize = true;
+            this.typeLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.typeLabel.Location = new System.Drawing.Point(17, 140);
+            this.typeLabel.Name = "typeLabel";
+            this.typeLabel.Size = new System.Drawing.Size(40, 19);
+            this.typeLabel.TabIndex = 8;
+            this.typeLabel.Text = "Тип:";
             // 
             // nameLabel
             // 
@@ -103,16 +113,7 @@ namespace PolyclinicSystem.Forms.Info
             this.editButton.TabIndex = 21;
             this.editButton.Text = "Редактировать";
             this.editButton.UseVisualStyleBackColor = true;
-            // 
-            // typeLabel
-            // 
-            this.typeLabel.AutoSize = true;
-            this.typeLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.typeLabel.Location = new System.Drawing.Point(17, 140);
-            this.typeLabel.Name = "typeLabel";
-            this.typeLabel.Size = new System.Drawing.Size(40, 19);
-            this.typeLabel.TabIndex = 8;
-            this.typeLabel.Text = "Тип:";
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // UserInfoForm
             // 

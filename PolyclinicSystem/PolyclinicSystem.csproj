@@ -89,6 +89,12 @@
     <Compile Include="Forms\Info\DoctorsListForm.Designer.cs">
       <DependentUpon>DoctorsListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Info\EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\EditUserForm.Designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SystemClasses\DoctorsHandler.cs" />
     <Compile Include="SystemClasses\UsersHandler.cs" />
     <Compile Include="Forms\Info\UsersListForm.cs">
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Info\DoctorsListForm.resx">
       <DependentUpon>DoctorsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info\EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Info\UsersListForm.resx">
       <DependentUpon>UsersListForm.cs</DependentUpon>
