@@ -113,6 +113,24 @@
     <Compile Include="Forms\Functions\VisitsListForm.Designer.cs">
       <DependentUpon>VisitsListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Info\DoctorInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\DoctorInfoForm.Designer.cs">
+      <DependentUpon>DoctorInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Info\PatientInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\PatientInfoForm.Designer.cs">
+      <DependentUpon>PatientInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Info\UserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\UserInfoForm.Designer.cs">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Profiles\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +209,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Functions\VisitsListForm.resx">
       <DependentUpon>VisitsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info\DoctorInfoForm.resx">
+      <DependentUpon>DoctorInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info\PatientInfoForm.resx">
+      <DependentUpon>PatientInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Profiles\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
