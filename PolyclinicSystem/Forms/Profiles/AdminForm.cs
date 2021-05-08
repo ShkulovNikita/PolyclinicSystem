@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using PolyclinicSystem.Forms.Functions;
+using PolyclinicSystem.Forms.Info;
 
 namespace PolyclinicSystem.Forms
 {
@@ -34,7 +35,8 @@ namespace PolyclinicSystem.Forms
 
         private void usersListButton_Click(object sender, EventArgs e)
         {
-
+            UsersListForm usersListForm = new UsersListForm();
+            usersListForm.Show();
         }
 
         private void AdminForm_Load(object sender, EventArgs e)

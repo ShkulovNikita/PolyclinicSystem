@@ -6,7 +6,7 @@ namespace PolyclinicSystem.Forms.Functions
 {
     public partial class VisitsListForm : Form
     {
-        public DataTable dt = new DataTable();
+        private DataTable dt = new DataTable();
 
         public VisitsListForm()
         {
@@ -14,6 +14,7 @@ namespace PolyclinicSystem.Forms.Functions
         }
 
         private void VisitsListForm_Load(object sender, EventArgs e)
+
         {
             try
             {
@@ -39,9 +40,7 @@ namespace PolyclinicSystem.Forms.Functions
                     visitsDataGrid.DataSource = VisitsHandler.FillData(MainForm.currentUser, dt);
                 }
                 else
-                {
                     throw new Exception("Не удалось загрузить таблицу");
-                }
             }
             catch (Exception ex)
             {
@@ -74,13 +73,11 @@ namespace PolyclinicSystem.Forms.Functions
             visitsDataGrid.DataSource = VisitsHandler.Search(MainForm.currentUser, query, dt);
         }
 
-        //просмотреть информацию о выбранном приеме
-        private void infoButton_Click(object sender, EventArgs e)
+        //отображение формы с информацией о приеме
+        private void ShowVisitForm(DataGridViewRow row)
         {
-            if (visitsDataGrid.SelectedRows.Count > 0)
+            if (row.Cells[0].Value != null)
             {
-                //получение идентификатора приема
-                DataGridViewRow row = visitsDataGrid.SelectedRows[0];
                 int ID = Convert.ToInt32(row.Cells[0].Value.ToString());
 
                 //получение самого приема
@@ -90,6 +87,24 @@ namespace PolyclinicSystem.Forms.Functions
                 VisitForm visitForm = new VisitForm(visit);
                 visitForm.FormClosed += VisitForm_FormClosed;
                 visitForm.Show();
+            }
+            else
+                MessagesHandler.ShowMessage("Не выбран прием у врача");
+        }
+
+        //просмотреть информацию о выбранном приеме
+        private void infoButton_Click(object sender, EventArgs e)
+        {
+            if (visitsDataGrid.SelectedRows.Count > 0)
+            {
+                //получение идентификатора приема
+                DataGridViewRow row = visitsDataGrid.SelectedRows[0];
+                ShowVisitForm(row);
+            }
+            else if(visitsDataGrid.SelectedCells.Count > 0)
+            {
+                DataGridViewRow row = visitsDataGrid.SelectedCells[0].OwningRow;
+                ShowVisitForm(row);
             }
             else
                 MessagesHandler.ShowMessage("Не выбран прием у врача");

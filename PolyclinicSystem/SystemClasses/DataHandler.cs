@@ -274,6 +274,24 @@ namespace PolyclinicSystem
             }
         }
 
+        static public List<User> GetUsers()
+        {
+            try
+            {
+                List<User> users;
+
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                    users = db.GetAllWithChildren<User>();
+
+                return users;
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+        }
+
         static public User GetUser(string login)
         {
             try
@@ -282,6 +300,22 @@ namespace PolyclinicSystem
                 {
                     User user = db.Query<User>("SELECT * FROM User WHERE Login = ?", login).First();
                     return db.GetWithChildren<User>(user.ID);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+        }
+
+        static public User GetUser(int ID)
+        {
+            try
+            {
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    return db.GetWithChildren<User>(ID);
                 }
             }
             catch (Exception ex)

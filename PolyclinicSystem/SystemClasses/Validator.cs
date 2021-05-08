@@ -54,5 +54,12 @@ namespace PolyclinicSystem
                 return true;
             else return false;
         }
+
+        static public bool IsType(string type)
+        {
+            if ((type == "Доктор") || (type == "Пациент") || (type == "Администратор"))
+                return true;
+            else return false;
+        }
     }
 }

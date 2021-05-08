@@ -48,6 +48,15 @@ namespace PolyclinicSystem.Forms.Functions
                 doctorLabel.Click += DoctorLabel_Click;
                 doctorLabel.ForeColor = Color.Blue;
             }
+            //если администратор - разрешить просмотр и врача, и пациента
+            if (MainForm.CurAdmin != null)
+            {
+                patientLabel.Click += PatientLabel_Click;
+                patientLabel.ForeColor = Color.Blue;
+
+                doctorLabel.Click += DoctorLabel_Click;
+                doctorLabel.ForeColor = Color.Blue;
+            }
         }
 
         private void PatientLabel_Click(object sender, EventArgs e)
