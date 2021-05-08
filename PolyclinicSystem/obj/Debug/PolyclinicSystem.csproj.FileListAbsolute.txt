@@ -39,3 +39,4 @@ D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Patien
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Info.UserInfoForm.resources
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Info.UsersListForm.resources
 D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Info.AddDoctorForm.resources
+D:\git\PolyclinicSystem\PolyclinicSystem\obj\Debug\PolyclinicSystem.Forms.Info.DoctorsListForm.resources

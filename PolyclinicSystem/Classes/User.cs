@@ -28,10 +28,12 @@ public class User
     [OneToMany(CascadeOperations = CascadeOperation.All)]
     public List<Doctor> Doctors { get; set; }
 
-    public void Edit(string name, string email)
+    public void Edit(string name, string email, string password, string login)
     {
         Name = name;
         Email = email;
+        Login = login;
+        Password = password;
     }
 
     public void ChangePassword(string newPassword)

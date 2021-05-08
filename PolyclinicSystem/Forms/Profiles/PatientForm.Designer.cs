@@ -66,6 +66,7 @@ namespace PolyclinicSystem.Forms
             this.doctorsButton.TabIndex = 1;
             this.doctorsButton.Text = "Врачи";
             this.doctorsButton.UseVisualStyleBackColor = true;
+            this.doctorsButton.Click += new System.EventHandler(this.doctorsButton_Click);
             // 
             // editProfileButton
             // 

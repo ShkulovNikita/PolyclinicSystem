@@ -35,7 +35,6 @@ namespace PolyclinicSystem.Forms.Functions
             this.label1 = new System.Windows.Forms.Label();
             this.visitsDataGrid = new System.Windows.Forms.DataGridView();
             this.infoButton = new System.Windows.Forms.Button();
-            this.addVisit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.visitsDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,24 +105,11 @@ namespace PolyclinicSystem.Forms.Functions
             this.infoButton.UseVisualStyleBackColor = true;
             this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
-            // addVisit
-            // 
-            this.addVisit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.addVisit.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addVisit.Location = new System.Drawing.Point(12, 457);
-            this.addVisit.Name = "addVisit";
-            this.addVisit.Size = new System.Drawing.Size(214, 40);
-            this.addVisit.TabIndex = 7;
-            this.addVisit.Text = "Записаться на прием";
-            this.addVisit.UseVisualStyleBackColor = true;
-            this.addVisit.Click += new System.EventHandler(this.addVisit_Click);
-            // 
             // VisitsListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 509);
-            this.Controls.Add(this.addVisit);
             this.Controls.Add(this.infoButton);
             this.Controls.Add(this.visitsDataGrid);
             this.Controls.Add(this.label1);
@@ -148,6 +134,5 @@ namespace PolyclinicSystem.Forms.Functions
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView visitsDataGrid;
         private System.Windows.Forms.Button infoButton;
-        private System.Windows.Forms.Button addVisit;
     }
 }

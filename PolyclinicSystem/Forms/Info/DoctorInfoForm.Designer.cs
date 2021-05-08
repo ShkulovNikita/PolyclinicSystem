@@ -35,6 +35,7 @@ namespace PolyclinicSystem.Forms.Info
             this.emailLabel = new System.Windows.Forms.Label();
             this.specialtyLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.addVisitButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@ namespace PolyclinicSystem.Forms.Info
             // 
             this.feedbackButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.feedbackButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.feedbackButton.Location = new System.Drawing.Point(469, 81);
+            this.feedbackButton.Location = new System.Drawing.Point(470, 173);
             this.feedbackButton.Name = "feedbackButton";
             this.feedbackButton.Size = new System.Drawing.Size(160, 50);
             this.feedbackButton.TabIndex = 20;
@@ -102,11 +103,24 @@ namespace PolyclinicSystem.Forms.Info
             this.panel2.Size = new System.Drawing.Size(704, 57);
             this.panel2.TabIndex = 18;
             // 
+            // addVisitButton
+            // 
+            this.addVisitButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addVisitButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addVisitButton.Location = new System.Drawing.Point(470, 81);
+            this.addVisitButton.Name = "addVisitButton";
+            this.addVisitButton.Size = new System.Drawing.Size(160, 50);
+            this.addVisitButton.TabIndex = 21;
+            this.addVisitButton.Text = "Записаться на прием";
+            this.addVisitButton.UseVisualStyleBackColor = true;
+            this.addVisitButton.Click += new System.EventHandler(this.addVisitButton_Click);
+            // 
             // DoctorInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 244);
+            this.Controls.Add(this.addVisitButton);
             this.Controls.Add(this.feedbackButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -127,5 +141,6 @@ namespace PolyclinicSystem.Forms.Info
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.Label specialtyLabel;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button addVisitButton;
     }
 }

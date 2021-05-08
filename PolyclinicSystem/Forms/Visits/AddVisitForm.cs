@@ -1,19 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace PolyclinicSystem.Forms.Functions
 {
     public partial class AddVisitForm : Form
     {
-        private List<Doctor> doctors;
-
         private Doctor chosenDoctor;
         private string chosenDate;
 
-        public AddVisitForm()
+        public AddVisitForm(Doctor doctor)
         {
             InitializeComponent();
+            chosenDoctor = doctor;
         }
 
         private void AddVisitForm_Load(object sender, EventArgs e)
@@ -26,34 +24,9 @@ namespace PolyclinicSystem.Forms.Functions
 
             //заблокировать кнопку записи и выбор даты
             addVisitButton.Enabled = false;
-            visitDateTimePicker.Enabled = false;
 
-            //передать список врачей в выпадающий список
-            List<Doctor> listDoctors = DataHandler.GetDoctors();
-            if (listDoctors != null)
-            {
-                //сохранение полученного списка врачей
-                doctors = listDoctors;
-
-                foreach (Doctor doctor in doctors)
-                {
-                    doctorsComboBox.Items.Add(doctor.User.Name);
-                }
-            }
-            else
-            {
-                ErrorHandler.ShowError("Не удалось получить список врачей");
-                Close();
-            }
-        }
-
-        //был выбран доктор
-        private void doctorsComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //разрешить выбрать дату
-            visitDateTimePicker.Enabled = true;
-            //убедиться, что кнопка без выбора даты заблокирована
-            addVisitButton.Enabled = false;
+            //указать выбранного врача
+            doctorTextBox.Text = chosenDoctor.User.Name;
         }
 
         //выбрана какая-то дата
@@ -69,31 +42,18 @@ namespace PolyclinicSystem.Forms.Functions
             {
                 dayOfWeek = visitDateTimePicker.Value.ToString("dd.MM.yyyy");
 
-                //получить выбранного доктора
-                Doctor chsnDoctor = GetDoctorFromList(doctorsComboBox.SelectedItem.ToString());
-
                 //определить занятость выбранного доктора в выбранный день
-                bool dayIsFree = VisitsHandler.CheckDoctorBusyness(chsnDoctor, dayOfWeek);
+                bool dayIsFree = VisitsHandler.CheckDoctorBusyness(chosenDoctor, dayOfWeek);
 
                 //если день свободен, то разрешить записаться на прием
                 if (dayIsFree)
                 {
                     addVisitButton.Enabled = true;
-                    chosenDoctor = chsnDoctor;
                     chosenDate = dayOfWeek;
                 }
                 else
                     messagesLabel.Text = "Выбранный день занят";
             }
-        }
-
-        //получить выбранного доктора по его имени
-        private Doctor GetDoctorFromList(string name)
-        {
-            foreach (Doctor doctor in doctors)
-                if (doctor.User.Name == name)
-                    return doctor;
-            return null;
         }
 
         //нажатие на кнопку записи на прием

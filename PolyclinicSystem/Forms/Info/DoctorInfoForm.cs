@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PolyclinicSystem.Forms.Functions;
+using System;
 using System.Windows.Forms;
 
 namespace PolyclinicSystem.Forms.Info
@@ -33,6 +34,13 @@ namespace PolyclinicSystem.Forms.Info
                 ErrorHandler.ShowError("Не удалось загрузить профиль врача");
                 Close();
             }
+        }
+
+        //записаться на прием к выбранному врачу
+        private void addVisitButton_Click(object sender, EventArgs e)
+        {
+            AddVisitForm addVisitForm = new AddVisitForm(InfoDoctor);
+            addVisitForm.Show();
         }
     }
 }

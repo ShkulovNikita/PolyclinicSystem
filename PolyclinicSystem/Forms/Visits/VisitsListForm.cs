@@ -50,21 +50,6 @@ namespace PolyclinicSystem.Forms.Functions
             }
         }
 
-        //записаться на прием
-        private void addVisit_Click(object sender, EventArgs e)
-        {
-            AddVisitForm addVisitForm = new AddVisitForm();
-            addVisitForm.FormClosed += AddVisitForm_FormClosed;
-            addVisitForm.Show();
-        }
-
-        //отреагировать на закрытие формы записи на прием
-        private void AddVisitForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //обновить таблицу приемов
-            visitsDataGrid.DataSource = VisitsHandler.FillData(MainForm.currentUser, dt);
-        }
-
         //выполнение поиска
         private void searchButton_Click(object sender, EventArgs e)
         {

@@ -32,12 +32,12 @@ namespace PolyclinicSystem.Forms.Functions
             this.addVisitButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.visitDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.doctorsComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.messagesLabel = new System.Windows.Forms.Label();
             this.visitTypeComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.doctorTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // addVisitButton
@@ -67,30 +67,18 @@ namespace PolyclinicSystem.Forms.Functions
             // 
             this.visitDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.visitDateTimePicker.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.visitDateTimePicker.Location = new System.Drawing.Point(69, 226);
+            this.visitDateTimePicker.Location = new System.Drawing.Point(63, 226);
             this.visitDateTimePicker.Name = "visitDateTimePicker";
             this.visitDateTimePicker.Size = new System.Drawing.Size(367, 27);
             this.visitDateTimePicker.TabIndex = 10;
             this.visitDateTimePicker.ValueChanged += new System.EventHandler(this.visitDateTimePicker_ValueChanged);
-            // 
-            // doctorsComboBox
-            // 
-            this.doctorsComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.doctorsComboBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.doctorsComboBox.FormattingEnabled = true;
-            this.doctorsComboBox.Location = new System.Drawing.Point(69, 140);
-            this.doctorsComboBox.Name = "doctorsComboBox";
-            this.doctorsComboBox.Size = new System.Drawing.Size(367, 27);
-            this.doctorsComboBox.Sorted = true;
-            this.doctorsComboBox.TabIndex = 11;
-            this.doctorsComboBox.SelectedIndexChanged += new System.EventHandler(this.doctorsComboBox_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(65, 107);
+            this.label1.Location = new System.Drawing.Point(59, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 19);
             this.label1.TabIndex = 12;
@@ -101,7 +89,7 @@ namespace PolyclinicSystem.Forms.Functions
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(65, 191);
+            this.label2.Location = new System.Drawing.Point(59, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 19);
             this.label2.TabIndex = 13;
@@ -127,7 +115,7 @@ namespace PolyclinicSystem.Forms.Functions
             this.visitTypeComboBox.Items.AddRange(new object[] {
             "Первичный",
             "Повторный"});
-            this.visitTypeComboBox.Location = new System.Drawing.Point(69, 317);
+            this.visitTypeComboBox.Location = new System.Drawing.Point(63, 317);
             this.visitTypeComboBox.Name = "visitTypeComboBox";
             this.visitTypeComboBox.Size = new System.Drawing.Size(367, 27);
             this.visitTypeComboBox.Sorted = true;
@@ -138,29 +126,38 @@ namespace PolyclinicSystem.Forms.Functions
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(65, 278);
+            this.label3.Location = new System.Drawing.Point(59, 278);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(182, 19);
             this.label3.TabIndex = 16;
             this.label3.Text = "Выберите тип приема:";
+            // 
+            // doctorTextBox
+            // 
+            this.doctorTextBox.Enabled = false;
+            this.doctorTextBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.doctorTextBox.Location = new System.Drawing.Point(63, 143);
+            this.doctorTextBox.Name = "doctorTextBox";
+            this.doctorTextBox.Size = new System.Drawing.Size(367, 27);
+            this.doctorTextBox.TabIndex = 17;
             // 
             // AddVisitForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 474);
+            this.Controls.Add(this.doctorTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.visitTypeComboBox);
             this.Controls.Add(this.messagesLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.doctorsComboBox);
             this.Controls.Add(this.visitDateTimePicker);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.addVisitButton);
             this.MinimumSize = new System.Drawing.Size(513, 521);
             this.Name = "AddVisitForm";
-            this.Text = "Записаться на прием";
+            this.Text = "Выбранный врач:";
             this.Load += new System.EventHandler(this.AddVisitForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,11 +169,11 @@ namespace PolyclinicSystem.Forms.Functions
         private System.Windows.Forms.Button addVisitButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker visitDateTimePicker;
-        private System.Windows.Forms.ComboBox doctorsComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label messagesLabel;
         private System.Windows.Forms.ComboBox visitTypeComboBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox doctorTextBox;
     }
 }

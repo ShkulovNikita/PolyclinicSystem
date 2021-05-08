@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using PolyclinicSystem.Forms.Functions;
+using PolyclinicSystem.Forms.Info;
 
 namespace PolyclinicSystem.Forms
 {
@@ -59,6 +60,12 @@ namespace PolyclinicSystem.Forms
         private void EditPatientForm_FormClosed(object sender, EventArgs e)
         {
             InitializeLabels();
+        }
+
+        private void doctorsButton_Click(object sender, EventArgs e)
+        {
+            DoctorsListForm doctorsListForm = new DoctorsListForm();
+            doctorsListForm.Show();
         }
     }
 }
