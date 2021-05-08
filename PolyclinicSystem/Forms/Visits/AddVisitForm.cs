@@ -73,6 +73,8 @@ namespace PolyclinicSystem.Forms.Functions
                     string type = visitTypeComboBox.SelectedItem.ToString();
                     DataHandler.AddDoctorVisit(doctorLogin, cardNumber, chosenDate, type);
 
+                    MessagesHandler.ShowMessage("Записан новый прием у врача");
+
                     //закрыть окно
                     Close();
                 }

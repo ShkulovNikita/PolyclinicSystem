@@ -56,6 +56,38 @@
             return result;
         }
 
+        static public bool AddDoctor(string login, string name, string email, string password, string specialty)
+        {
+            bool result = false;
+
+            if (IsEmpty(login))
+                ErrorHandler.ShowError("Не введен логин");
+            else if (IsEmpty(name))
+                ErrorHandler.ShowError("Не введено имя");
+            else if (IsEmpty(email))
+                ErrorHandler.ShowError("Не введена электронная почта");
+            else if (IsEmpty(password))
+                ErrorHandler.ShowError("Не введен пароль");
+            else if (IsEmpty(specialty))
+                ErrorHandler.ShowError("Не выбрана специальность");
+            else if (!Validator.CheckEmail(email))
+                ErrorHandler.ShowError("Неправильный формат электронной почты");
+            else
+            {
+                //есть ли уже такой логин
+                if (DataHandler.GetPatient(login) != null)
+                    ErrorHandler.ShowError("Введенный логин уже занят");
+                else
+                {
+                    DataHandler.AddDoctor(login, name, email, password, specialty);
+                    MessagesHandler.ShowMessage("Добавлен новый врач");
+                    return true;
+                }
+            }
+
+            return result;
+        }
+
         static private bool IsEmpty(string value)
         {
             if ((value == null) || (value == ""))

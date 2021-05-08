@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using PolyclinicSystem.Forms;
-using SQLite;
+using System.IO;
 
 namespace PolyclinicSystem
 {
@@ -21,8 +21,13 @@ namespace PolyclinicSystem
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            loginTextBox.Text = "domin";
-            passwordTextBox.Text = "123456";
+            if(!File.Exists("Polyclinic.db"))
+            {
+                bool result = DataHandler.CreateDatabase();
+
+                if (!result)
+                    Close();
+            }
         }
 
         //нажатие на кнопку входа в профиль

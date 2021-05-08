@@ -45,9 +45,12 @@ namespace PolyclinicSystem.Forms.Info
 
                 try
                 {
-                    DataHandler.AddDoctor(login, name, email, password, specialty);
-                    MessagesHandler.ShowMessage("Добавлен новый врач");
-                    Close();
+                    bool result = ProfilesHandler.AddDoctor(login, name, email, password, specialty);
+                    if (result) 
+                    {
+                        MessagesHandler.ShowMessage("Добавлен новый врач");
+                        Close();
+                    }
                 }
                 catch(Exception ex)
                 {

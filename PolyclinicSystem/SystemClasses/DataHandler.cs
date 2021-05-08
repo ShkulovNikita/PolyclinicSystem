@@ -10,6 +10,46 @@ namespace PolyclinicSystem
     {
         static public readonly string DBFile = "Polyclinic.db";
 
+        static public bool CreateDatabase()
+        {
+            bool result = false;
+
+            try
+            {
+                using (SQLiteConnection db = new SQLiteConnection("Polyclinic.db"))
+                {
+                    db.CreateTable<Specialty>();
+                    db.CreateTable<User>();
+                    db.CreateTable<Administrator>();
+                    db.CreateTable<Doctor>();
+                    db.CreateTable<Patient>();
+                    db.CreateTable<PatientCard>();
+                    db.CreateTable<DoctorVisit>();
+                    db.CreateTable<Feedback>();
+                }
+
+                AddAdministrator("admin", "Админов Админ Админович", "admin@mail.ru", "admin", "89055436765");
+
+                AddSpecialty("Стоматолог");
+                AddSpecialty("Хирург");
+                AddSpecialty("Терапевт");
+                AddSpecialty("Окулист");
+                AddSpecialty("Педиатр");
+                AddSpecialty("Травматолог");
+                AddSpecialty("Кардиолог");
+                AddSpecialty("Невролог");
+                AddSpecialty("Психиатр");
+                result = true;
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                ErrorHandler.ShowError("Не удалось создать/подключиться к БД");
+            }
+
+            return result;
+        }
+
         static private void AddToDatabase(object obj)
         {
             try
@@ -413,6 +453,25 @@ namespace PolyclinicSystem
             }
         }
 
+        static public Patient GetPatient(int id, bool flag)
+        {
+            if (!flag)
+                return GetPatient(id);
+            else
+            {
+                try
+                {
+                    using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                        return db.GetWithChildren<Patient>(id);
+                }
+                catch (Exception ex)
+                {
+                    Logger.WriteLog(ex);
+                    return null;
+                }
+            }
+        }
+
         static public PatientCard GetPatientCard(string cardNumber)
         {
             try
@@ -588,6 +647,40 @@ namespace PolyclinicSystem
                 }
 
                 return doctors;
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+        }
+
+        static public List<Feedback> GetFeedback()
+        {
+            try
+            {
+                List<Feedback> feedbacks;
+
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                    feedbacks = db.GetAllWithChildren<Feedback>();
+
+                return feedbacks;
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+        }
+
+        static public Feedback GetFeedback(int ID)
+        {
+            try
+            {
+                using (SQLiteConnection db = new SQLiteConnection(DBFile)) 
+                {
+                    return db.GetWithChildren<Feedback>(ID);
+                }
             }
             catch (Exception ex)
             {

@@ -101,7 +101,7 @@ namespace PolyclinicSystem.Forms.Info
             this.loginTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.loginTextBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.loginTextBox.Location = new System.Drawing.Point(124, 73);
-            this.loginTextBox.MaxLength = 16;
+            this.loginTextBox.MaxLength = 3000;
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.Size = new System.Drawing.Size(427, 27);
             this.loginTextBox.TabIndex = 21;
@@ -111,7 +111,7 @@ namespace PolyclinicSystem.Forms.Info
             this.nameTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nameTextBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.nameTextBox.Location = new System.Drawing.Point(124, 112);
-            this.nameTextBox.MaxLength = 16;
+            this.nameTextBox.MaxLength = 3000;
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(427, 27);
             this.nameTextBox.TabIndex = 22;
@@ -121,7 +121,7 @@ namespace PolyclinicSystem.Forms.Info
             this.emailTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.emailTextBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.emailTextBox.Location = new System.Drawing.Point(124, 154);
-            this.emailTextBox.MaxLength = 16;
+            this.emailTextBox.MaxLength = 3000;
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(427, 27);
             this.emailTextBox.TabIndex = 23;
@@ -131,7 +131,7 @@ namespace PolyclinicSystem.Forms.Info
             this.passwordTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.passwordTextBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.passwordTextBox.Location = new System.Drawing.Point(124, 196);
-            this.passwordTextBox.MaxLength = 16;
+            this.passwordTextBox.MaxLength = 3000;
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(427, 27);
             this.passwordTextBox.TabIndex = 24;

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 
 namespace PolyclinicSystem
@@ -41,7 +39,7 @@ namespace PolyclinicSystem
                 
                 foreach(Doctor doctor in doctors)
                 {
-                    int id = doctor.User.ID;
+                    int id = doctor.DoctorID;
                     string name = doctor.User.Name;
                     string specialty = doctor.Specialty.Name;
 
