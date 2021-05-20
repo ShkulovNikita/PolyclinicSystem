@@ -655,24 +655,6 @@ namespace PolyclinicSystem
             }
         }
 
-        static public List<Feedback> GetFeedback()
-        {
-            try
-            {
-                List<Feedback> feedbacks;
-
-                using (SQLiteConnection db = new SQLiteConnection(DBFile))
-                    feedbacks = db.GetAllWithChildren<Feedback>();
-
-                return feedbacks;
-            }
-            catch (Exception ex)
-            {
-                Logger.WriteLog(ex);
-                return null;
-            }
-        }
-
         static public Feedback GetFeedback(int ID)
         {
             try

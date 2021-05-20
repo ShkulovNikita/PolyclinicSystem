@@ -77,16 +77,22 @@
     <Compile Include="Classes\PatientCard.cs" />
     <Compile Include="Classes\Specialty.cs" />
     <Compile Include="Classes\User.cs" />
-    <Compile Include="Forms\Feedback\AddFeedbackForm.cs">
+    <Compile Include="Forms\FeedbackForms\AddFeedbackForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Feedback\AddFeedbackForm.Designer.cs">
+    <Compile Include="Forms\FeedbackForms\AddFeedbackForm.Designer.cs">
       <DependentUpon>AddFeedbackForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Feedback\FeedbackListForm.cs">
+    <Compile Include="Forms\FeedbackForms\FeedbackForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Feedback\FeedbackListForm.Designer.cs">
+    <Compile Include="Forms\FeedbackForms\FeedbackForm.Designer.cs">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FeedbackForms\FeedbackListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FeedbackForms\FeedbackListForm.Designer.cs">
       <DependentUpon>FeedbackListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Info\AddDoctorForm.cs">
@@ -108,6 +114,7 @@
       <DependentUpon>EditUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SystemClasses\DoctorsHandler.cs" />
+    <Compile Include="SystemClasses\FeedbackHandler.cs" />
     <Compile Include="SystemClasses\UsersHandler.cs" />
     <Compile Include="Forms\Info\UsersListForm.cs">
       <SubType>Form</SubType>
@@ -230,10 +237,13 @@
     <EmbeddedResource Include="Forms\Authorization\SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Feedback\AddFeedbackForm.resx">
+    <EmbeddedResource Include="Forms\FeedbackForms\AddFeedbackForm.resx">
       <DependentUpon>AddFeedbackForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Feedback\FeedbackListForm.resx">
+    <EmbeddedResource Include="Forms\FeedbackForms\FeedbackForm.resx">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FeedbackForms\FeedbackListForm.resx">
       <DependentUpon>FeedbackListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Info\AddDoctorForm.resx">
@@ -296,6 +306,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

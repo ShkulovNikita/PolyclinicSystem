@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Administrator">
+    <Position X="4.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAABAAAAAAAAgAAAAAAAACAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Administrator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Doctor">
+    <Position X="7.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgABAAAAAAAAAAAAAAACAAgAAAACABAABAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Doctor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Feedbacks" />
+      <Property Name="DoctorVisits" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DoctorVisit">
+    <Position X="13.25" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EgAQAAAUQIAAAFIAAABAAQAAAAAAAAQBAQAAAAAAAAA=</HashCode>
+      <FileName>Classes\DoctorVisit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Feedback">
+    <Position X="13.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAQAAgAAAAAAAAAAAAAAAAAUBAAAACAAACAA=</HashCode>
+      <FileName>Classes\Feedback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient">
+    <Position X="10.5" Y="6" Width="1.5" />
+    <AssociationLine Name="Feedbacks" Type="Feedback">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.275" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAACAAAAGAQwIAAAAAAACAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\Patient.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="PatientCards" />
+      <Property Name="Feedbacks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PatientCard">
+    <Position X="10.5" Y="3.75" Width="1.75" />
+    <AssociationLine Name="DoctorVisits" Type="DoctorVisit">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.024" Y="-0.309" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAABAAAAAgACAA=</HashCode>
+      <FileName>Classes\PatientCard.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="DoctorVisits" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Specialty">
+    <Position X="7.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Classes\Specialty.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Doctors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="User">
+    <Position X="6.75" Y="7.25" Width="1.5" />
+    <AssociationLine Name="Administrators" Type="Administrator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.969" Y="7.25" />
+        <Point X="6.969" Y="6.727" />
+        <Point X="5.062" Y="6.727" />
+        <Point X="5.062" Y="6.132" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAgAAAAAAAAAQAAAAAAAACBgAQAAAAAAA=</HashCode>
+      <FileName>Classes\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Administrators" />
+      <Property Name="Doctors" />
+      <Property Name="Patients" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

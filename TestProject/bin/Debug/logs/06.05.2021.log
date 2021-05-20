@@ -1,0 +1,12 @@
+﻿----------------------------
+06.05.2021 2:14:53
+System.ArgumentOutOfRangeException: Индекс за пределами диапазона. Индекс должен быть положительным числом, а его размер не должен превышать размер коллекции.
+Имя параметра: index
+   в System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   в System.Collections.Generic.List`1.get_Item(Int32 index)
+   в PolyclinicSystem.Forms.Functions.AddVisitForm.addVisitButton_Click(Object sender, EventArgs e) в D:\git\PolyclinicSystem\PolyclinicSystem\Forms\Functions\AddVisitForm.cs:строка 133
+----------------------------
+06.05.2021 2:28:26
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 317

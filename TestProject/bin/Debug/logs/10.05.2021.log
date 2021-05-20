@@ -1,0 +1,43 @@
+﻿----------------------------
+10.05.2021 2:00:41
+System.TypeInitializationException: Инициализатор типа "SQLite.SQLiteConnection" выдал исключение. ---> System.DllNotFoundException: Не удается загрузить DLL "e_sqlite3": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+   в SQLitePCL.SQLite3Provider_e_sqlite3.NativeMethods.sqlite3_libversion_number()
+   в SQLitePCL.SQLite3Provider_e_sqlite3.SQLitePCL.ISQLite3Provider.sqlite3_libversion_number()
+   в SQLitePCL.raw.SetProvider(ISQLite3Provider imp)
+   в SQLitePCL.Batteries_V2.Init()
+   в SQLite.SQLiteConnection..cctor() в /Users/vagrant/git/src/SQLite.cs:строка 169
+   --- Конец трассировки внутреннего стека исключений ---
+   в SQLite.SQLiteConnection..ctor(String databasePath, Boolean storeDateTimeAsTicks)
+   в PolyclinicSystem.DataHandler.GetUser(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 339
+----------------------------
+10.05.2021 2:01:13
+System.TypeInitializationException: Инициализатор типа "SQLite.SQLiteConnection" выдал исключение. ---> System.DllNotFoundException: Не удается загрузить DLL "e_sqlite3": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+   в SQLitePCL.SQLite3Provider_e_sqlite3.NativeMethods.sqlite3_libversion_number()
+   в SQLitePCL.SQLite3Provider_e_sqlite3.SQLitePCL.ISQLite3Provider.sqlite3_libversion_number()
+   в SQLitePCL.raw.SetProvider(ISQLite3Provider imp)
+   в SQLitePCL.Batteries_V2.Init()
+   в SQLite.SQLiteConnection..cctor() в /Users/vagrant/git/src/SQLite.cs:строка 169
+   --- Конец трассировки внутреннего стека исключений ---
+   в SQLite.SQLiteConnection..ctor(String databasePath, Boolean storeDateTimeAsTicks)
+   в PolyclinicSystem.DataHandler.GetUser(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 339
+----------------------------
+10.05.2021 2:02:38
+System.TypeInitializationException: Инициализатор типа "SQLite.SQLiteConnection" выдал исключение. ---> System.DllNotFoundException: Не удается загрузить DLL "e_sqlite3": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+   в SQLitePCL.SQLite3Provider_e_sqlite3.NativeMethods.sqlite3_libversion_number()
+   в SQLitePCL.SQLite3Provider_e_sqlite3.SQLitePCL.ISQLite3Provider.sqlite3_libversion_number()
+   в SQLitePCL.raw.SetProvider(ISQLite3Provider imp)
+   в SQLitePCL.Batteries_V2.Init()
+   в SQLite.SQLiteConnection..cctor() в /Users/vagrant/git/src/SQLite.cs:строка 169
+   --- Конец трассировки внутреннего стека исключений ---
+   в SQLite.SQLiteConnection..ctor(String databasePath, Boolean storeDateTimeAsTicks)
+   в PolyclinicSystem.DataHandler.GetUser(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 339
+----------------------------
+10.05.2021 17:43:41
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 427
+----------------------------
+10.05.2021 17:49:50
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 427
