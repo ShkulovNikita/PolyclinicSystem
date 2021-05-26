@@ -34,7 +34,7 @@ namespace PolyclinicSystem
 
             try
             {
-                List<Doctor> doctors = new List<Doctor>();
+                List<Doctor> doctors;
                 doctors = DataHandler.GetDoctors();
                 
                 foreach(Doctor doctor in doctors)
