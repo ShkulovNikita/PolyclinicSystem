@@ -34,7 +34,7 @@ namespace PolyclinicSystem
 
             try
             {
-                List<User> users = new List<User>();
+                List<User> users;
                 users = DataHandler.GetUsers();
 
                 foreach (User user in users) 
