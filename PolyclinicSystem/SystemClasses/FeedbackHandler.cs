@@ -34,7 +34,7 @@ namespace PolyclinicSystem
 
             try
             {
-                List<Feedback> feedbacks = new List<Feedback>();
+                List<Feedback> feedbacks;
                 feedbacks = doctor.Feedbacks;
 
                 foreach (Feedback feedback in feedbacks)
