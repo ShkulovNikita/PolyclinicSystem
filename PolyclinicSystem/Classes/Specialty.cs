@@ -2,14 +2,17 @@
 using SQLiteNetExtensions.Attributes;
 using System.Collections.Generic;
 
-public class Specialty
+namespace PolyclinicSystem.Classes
 {
-    [PrimaryKey, AutoIncrement]
-    public int ID { get; set; }
+    public class Specialty
+    {
+        [PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
 
-    [NotNull, Unique]
-    public string Name { get; set; }
+        [NotNull, Unique]
+        public string Name { get; set; }
 
-    [OneToMany(CascadeOperations = CascadeOperation.All)]
-    public List<Doctor> Doctors { get; set; }
+        [OneToMany(CascadeOperations = CascadeOperation.All)]
+        public List<Doctor> Doctors { get; set; }
+    }
 }

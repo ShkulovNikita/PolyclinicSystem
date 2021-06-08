@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using SQLite;
 using SQLiteNetExtensions.Extensions;
+using PolyclinicSystem.Classes;
 
 namespace PolyclinicSystem
 {
@@ -536,6 +537,24 @@ namespace PolyclinicSystem
             catch (Exception ex)
             {
                 ErrorHandler.ShowError(ex);
+                return null;
+            }
+        }
+
+        static public Doctor IsDoctor(string login)
+        {
+            try
+            {
+                using (SQLiteConnection db = new SQLiteConnection(DBFile))
+                {
+                    User user = db.Query<User>("SELECT * FROM User WHERE Login = ?", login).First();
+                    Doctor doctor = db.Query<Doctor>("SELECT * FROM Doctor WHERE UserID = ?", user.ID).First();
+                    return db.GetWithChildren<Doctor>(doctor.DoctorID);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
                 return null;
             }
         }

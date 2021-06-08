@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Windows.Forms;
+using PolyclinicSystem.Classes;
+using PolyclinicSystem.Forms.FeedbackForms;
 
 namespace PolyclinicSystem.Forms.Info
 {
     public partial class UserInfoForm : Form
     {
         private User InfoUser;
+        private Doctor InfoDoctor;
 
         public UserInfoForm(User user)
         {
@@ -18,6 +21,25 @@ namespace PolyclinicSystem.Forms.Info
             try
             {
                 InitializeLabels();
+                if (MainForm.CurAdmin != null)
+                {
+                    //проверить, является ли пользователь доктором
+                    InfoDoctor = DataHandler.IsDoctor(InfoUser.Login);
+
+                    if(InfoDoctor != null)
+                    {
+                        feedbackButton.Visible = true;
+                        feedbackButton.Click += ShowFeedbacks_Click;
+                    }
+                    else
+                    {
+                        feedbackButton.Visible = false;
+                    }
+                }
+                else
+                {
+                    feedbackButton.Visible = false;
+                }
             }
             catch (Exception ex)
             {
@@ -46,6 +68,13 @@ namespace PolyclinicSystem.Forms.Info
             EditUserForm editUserForm = new EditUserForm(InfoUser);
             editUserForm.FormClosed += EditUserForm_FormClosed;
             editUserForm.Show();
+        }
+
+        //просмотр списка отзывов
+        private void ShowFeedbacks_Click(object sender, EventArgs e)
+        {
+            FeedbackListForm feedbackListForm = new FeedbackListForm(InfoDoctor);
+            feedbackListForm.Show();
         }
 
         private void EditUserForm_FormClosed(object sender, FormClosedEventArgs e)

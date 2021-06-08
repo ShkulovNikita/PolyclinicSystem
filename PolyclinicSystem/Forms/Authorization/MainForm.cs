@@ -2,14 +2,15 @@
 using System.Windows.Forms;
 using PolyclinicSystem.Forms;
 using System.IO;
+using PolyclinicSystem.Classes;
 
 namespace PolyclinicSystem
 {
     public partial class MainForm : Form
     {
-        static public Patient CurPatient;
-        static public Doctor CurDoctor;
-        static public Administrator CurAdmin;
+        static public Patient CurPatient { get; set; }
+        static public Doctor CurDoctor { get; set; }
+        static public Administrator CurAdmin { get; set; }
 
         static public string currentUser = "";
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Collections.Generic;
+using PolyclinicSystem.Classes;
 
 namespace PolyclinicSystem
 {
@@ -68,6 +69,7 @@ namespace PolyclinicSystem
                 {
                     string date = DateTime.Today.ToString("dd.MM.yyyy");
                     DataHandler.AddFeedback(doctor.User.Login, patient.User.Login, value, date, text);
+                    result = true;
                 }
                 catch (Exception ex)
                 {

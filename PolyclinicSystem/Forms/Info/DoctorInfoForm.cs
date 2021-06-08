@@ -2,6 +2,7 @@
 using PolyclinicSystem.Forms.Functions;
 using System;
 using System.Windows.Forms;
+using PolyclinicSystem.Classes;
 
 namespace PolyclinicSystem.Forms.Info
 {
@@ -21,6 +22,7 @@ namespace PolyclinicSystem.Forms.Info
             if (MainForm.CurAdmin != null)
             {
                 addVisitButton.Enabled = false;
+                feedbackButton.Visible = true;
                 feedbackButton.Text = "Список отзывов";
                 feedbackButton.Click += ShowFeedbacks_Click;
             }
@@ -38,7 +40,7 @@ namespace PolyclinicSystem.Forms.Info
             try
             {
                 nameLabel.Text = "ФИО: " + InfoDoctor.User.Name;
-                emailLabel.Text = "Email: " + InfoDoctor.User.Name;
+                emailLabel.Text = "Email: " + InfoDoctor.User.Email;
                 specialtyLabel.Text = "Специальность: " + InfoDoctor.Specialty.Name;
             }
             catch (Exception ex)

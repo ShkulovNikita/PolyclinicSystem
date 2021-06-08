@@ -22,7 +22,7 @@ namespace PolyclinicSystem.Forms
             try
             {
                 nameLabel.Text = "ФИО: " + MainForm.CurDoctor.User.Name;
-                emailLabel.Text = "Email: " + MainForm.CurDoctor.User.Name;
+                emailLabel.Text = "Email: " + MainForm.CurDoctor.User.Email;
                 specialtyLabel.Text = "Специальность: " + MainForm.CurDoctor.Specialty.Name;
             }
             catch (Exception ex)

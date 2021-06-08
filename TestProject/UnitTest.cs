@@ -2,6 +2,7 @@
 using PolyclinicSystem;
 using System;
 using System.Collections.Generic;
+using PolyclinicSystem.Classes;
 
 namespace TestProject
 {

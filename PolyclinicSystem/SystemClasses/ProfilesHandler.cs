@@ -1,4 +1,6 @@
-﻿namespace PolyclinicSystem
+﻿using PolyclinicSystem.Classes;
+
+namespace PolyclinicSystem
 {
     static public class ProfilesHandler
     {
@@ -80,7 +82,6 @@
                 else
                 {
                     DataHandler.AddDoctor(login, name, email, password, specialty);
-                    MessagesHandler.ShowMessage("Добавлен новый врач");
                     return true;
                 }
             }

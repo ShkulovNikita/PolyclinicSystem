@@ -102,7 +102,7 @@
     <Property Name="sonaranalyzer-vbnet.pluginKey">vbnet</Property>
     <Property Name="sonar.updatecenter.url">https://update.sonarsource.org/update-center.properties</Property>
     <Property Name="sonar.core.id">BF41A1F2-AXmKR8Ea61ZwRnl3Mx8O</Property>
-    <Property Name="sonar.core.startTime">26.05.2021 16:05:56</Property>
+    <Property Name="sonar.core.startTime">05.06.2021 21:44:39</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>
@@ -115,17 +115,17 @@
       <AnalyzerPlugins>
         <AnalyzerPlugin Key="csharp" Version="8.22.0.31243" StaticResourceName="SonarAnalyzer-8.22.0.31243.zip">
           <AssemblyPaths>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\0\Google.Protobuf.dll</Path>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\0\SonarAnalyzer.CFG.dll</Path>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\0\Google.Protobuf.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CFG.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
         <AnalyzerPlugin Key="vbnet" Version="8.22.0.31243" StaticResourceName="SonarAnalyzer-8.22.0.31243.zip">
           <AssemblyPaths>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\1\Google.Protobuf.dll</Path>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\1\Google.Protobuf.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
       </AnalyzerPlugins>
@@ -140,17 +140,17 @@
       <AnalyzerPlugins>
         <AnalyzerPlugin Key="csharp" Version="8.22.0.31243" StaticResourceName="SonarAnalyzer-8.22.0.31243.zip">
           <AssemblyPaths>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\0\Google.Protobuf.dll</Path>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\0\SonarAnalyzer.CFG.dll</Path>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\0\Google.Protobuf.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CFG.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
         <AnalyzerPlugin Key="vbnet" Version="8.22.0.31243" StaticResourceName="SonarAnalyzer-8.22.0.31243.zip">
           <AssemblyPaths>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\1\Google.Protobuf.dll</Path>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
-            <Path>C:\WINDOWS\TEMP\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\1\Google.Protobuf.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
+            <Path>C:\Users\djeda\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
       </AnalyzerPlugins>

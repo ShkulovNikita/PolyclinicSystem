@@ -1,0 +1,72 @@
+﻿----------------------------
+06.06.2021 19:08:26
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 192
+----------------------------
+06.06.2021 19:08:26
+System.InvalidOperationException: Источник не содержит строк DataRow.
+   в System.Data.DataTableExtensions.LoadTableFromEnumerable[T](IEnumerable`1 source, DataTable table, Nullable`1 options, FillErrorEventHandler errorHandler)
+   в System.Data.DataTableExtensions.CopyToDataTable[T](IEnumerable`1 source)
+   в PolyclinicSystem.VisitsHandler.FilterData(DataTable table, String field, String value) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cs:строка 192
+----------------------------
+06.06.2021 19:09:04
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 429
+----------------------------
+06.06.2021 19:10:39
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428
+----------------------------
+06.06.2021 19:11:21
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428
+----------------------------
+06.06.2021 19:14:57
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428
+----------------------------
+06.06.2021 19:15:52
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428
+----------------------------
+06.06.2021 19:16:32
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428
+----------------------------
+06.06.2021 19:17:03
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428
+----------------------------
+06.06.2021 19:17:49
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428
+----------------------------
+06.06.2021 19:19:47
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428
+----------------------------
+06.06.2021 19:20:53
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428
+----------------------------
+06.06.2021 19:25:28
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428
+----------------------------
+06.06.2021 19:30:10
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetUser(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 342

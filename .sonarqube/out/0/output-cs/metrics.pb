@@ -1,55 +1,54 @@
-b
-AD:\git\PolyclinicSystem\PolyclinicSystem\Classes\Administrator.cs 	8	r	
-ÇX
-:D:\git\PolyclinicSystem\PolyclinicSystem\Classes\Doctor.cs 8r
-à
-?D:\git\PolyclinicSystem\PolyclinicSystem\Classes\DoctorVisit.cs	 8j")06r+	 #$%&'*+,-.1234789:;<=>Ç	%&,-39:;<[
-<D:\git\PolyclinicSystem\PolyclinicSystem\Classes\Feedback.cs 8r	
-p
-;D:\git\PolyclinicSystem\PolyclinicSystem\Classes\Patient.cs 8r"
-!"$%'()*+,-.Ç)*+,Y
+e
+AD:\git\PolyclinicSystem\PolyclinicSystem\Classes\Administrator.cs 	8	r	Ç[
+:D:\git\PolyclinicSystem\PolyclinicSystem\Classes\Doctor.cs 8r	
+ã
+?D:\git\PolyclinicSystem\PolyclinicSystem\Classes\DoctorVisit.cs	 8j$+28r.	!"%&'(),-./034569:;<=>?@AÇ	'(./5;<=>^
+<D:\git\PolyclinicSystem\PolyclinicSystem\Classes\Feedback.cs 8r	 s
+;D:\git\PolyclinicSystem\PolyclinicSystem\Classes\Patient.cs 8r%	
+ !#$&')*+,-./01Ç+,-.\
 ?D:\git\PolyclinicSystem\PolyclinicSystem\Classes\PatientCard.cs 
 8
-r
-S
-=D:\git\PolyclinicSystem\PolyclinicSystem\Classes\Specialty.cs 8r
-m
-8D:\git\PolyclinicSystem\PolyclinicSystem\Classes\User.cs 8r!
- !"#$%'()*+Ç!"#$)´
-OD:\git\PolyclinicSystem\PolyclinicSystem\Forms\FeedbackForms\AddFeedbackForm.cs 8	jr2	!"#$%&'()*+,-./01234567xÇ!"%()+,12Ä
-LD:\git\PolyclinicSystem\PolyclinicSystem\Forms\FeedbackForms\FeedbackForm.cs 8r
-xÇ…
-PD:\git\PolyclinicSystem\PolyclinicSystem\Forms\FeedbackForms\FeedbackListForm.cs 8	j!#18;rD	 "$%&'()*+,-./234569<=>?@ACDEFGHIJKLMNOPQRSx	Ç "$'+,-469=@EGHJLMP®
-DD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\AddDoctorForm.cs 8j #r9	
-!"$%&'()*+,./0123456789:;<=>?@xÇ$%()*+,01349:;Œ
-FD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\DoctorsListForm.cs 8j .26=@IN[rK	!"#$%&'()*+,/0134789:;>ABCDEFGJKLMOPQRSTUVWXY\]^_`ax	Ç!$()*139;>BCFLOPRTUX^†
-CD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\EditUserForm.cs 8j!$r4
-"#%&'(*+,-./0123456789:;xÇ%&'(,-/0567Ã
-HD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DoctorsHandler.cs" 8	j
-:=ANrM	 !#$%&()*+,./12345678;<>?BDEFGHIKLOPQRSTUVWXYZ[\]^_`x
-Ç!&(*+,.156>?BDFGHKSTVZ[\≈
-ID:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\FeedbackHandler.cs" 8j	rK
- !#$%&()*+,-/012345689;<=?@ABCDEFGHIJKLMOPRSTUVWXYx
-Ç!&(*+,-/458?@EFJKOTUV”
-FD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\UsersHandler.cs' 8j
-?BFSrR	 !#$%&()*+,-./01346789:;<=@ACDGIJKLMNPQTUVWXYZ[\]^_`abcdexÇ"!&(*+-./0136:;CDGIKLMPXY[_`a‹
-DD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\UsersListForm.cs# 8j!/37>AJO\bjrU	 "#$%&'()*+,-0124589:;<?BCDEFGHKLMNPQRSTUVWXYZ]^_`cdefghklmnopx	Ç  "%)*+24:<?CDGMPQSUVY_fgm¡
+r	
+V
+=D:\git\PolyclinicSystem\PolyclinicSystem\Classes\Specialty.cs 8r	
+p
+8D:\git\PolyclinicSystem\PolyclinicSystem\Classes\User.cs 8r$	
+!"#$%&')*+,-.Ç#$%&+¨
+OD:\git\PolyclinicSystem\PolyclinicSystem\Forms\FeedbackForms\AddFeedbackForm.cs 8	jr3	
+ "#$%&'()*+,-./012345678xÇ "#&)*,-23Å
+LD:\git\PolyclinicSystem\PolyclinicSystem\Forms\FeedbackForms\FeedbackForm.cs 8r	 xÇ 
+PD:\git\PolyclinicSystem\PolyclinicSystem\Forms\FeedbackForms\FeedbackListForm.cs 8	j"$29<rE	
+ !#%&'()*+,-./034567:=>?@ABDEFGHIJKLMNOPQRSTx	Ç !#%(,-.57:>AFHIKMNQ©
+DD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\AddDoctorForm.cs 8j!$r:	
+"#%&'()*+,-/0123456789:;<=>?@AxÇ%&)*+,-1245:;<œ
+FD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\DoctorsListForm.cs 8j!/37>AJO\rL	
+ "#$%&'()*+,-0124589:;<?BCDEFGHKLMNPQRSTUVWXYZ]^_`abx	Ç "%)*+24:<?CDGMPQSUVY_°
+CD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\EditUserForm.cs 8j"%r5	 #$&'()+,-./0123456789:;<xÇ&'()-.01678Õ
+HD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DoctorsHandler.cs" 8	j;>BOrN	
+ !"$%&')*+,-/023456789<=?@CEFGHIJLMPQRSTUVWXYZ[\]^_`ax
+Ç"')+,-/267?@CEGHILTUW[\]∆
+ID:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\FeedbackHandler.cs" 8j
+rL	 !"$%&')*+,-.012345679:<=>@ABCDEFGHIJKLMNPQSTUVWXYZx
+Ç"')+,-.0569@AFGKLPUVW‘
+FD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\UsersHandler.cs' 8j@CGTrS	
+ !"$%&')*+,-./01245789:;<=>ABDEHJKLMNOQRUVWXYZ[\]^_`abcdefxÇ""')+,./01247;<DEHJLMNQYZ\`ab›
+DD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\UsersListForm.cs# 8j "048?BKP]ckrV	
+!#$%&'()*+,-.123569:;<=@CDEFGHILMNOQRSTUVWXYZ[^_`adefghilmnopqx	Ç !#&*+,35;=@DEHNQRTVWZ`ghn¬
 ED:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\AddVisitForm.cs 8j
- %-0;FNrC	!"#&'()*+.123456789<=>?@ABCDEGHIJLOPQRSTUVWXYZx	Ç#&'(+.1347@BGHIJLOTUVî
-ID:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\AddVisitInfoForm.cs 8j"r&
- #%&'()*+,-./0xÇ #%&*+,π
-GD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\ChooseDateForm.cs 8j(+4?Br@	
- !"$%&),-.01256789:;<=@CDEFGHIJKLMNOPxÇ!&),-25689=@CEFJK’
-BD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\VisitForm.csM 8j"'-3@BIKhtÄåïòúü∏ªÃrı	
- !#$%&()*+,./01245679:;<>?ACDEGHJLMNPQRSTVWXZ[]^_`abcdefijklmnopqruvwxyz{|}~ÅÇÉÑÖÜáàâäçéèêëíìñóôöùû†°¢£§•ß®©™´¨≠Æ∞±≤≥¥µ∂π∫ºΩæø¿¡√ƒ≈∆«»… ÕŒœ–—“‘’÷◊ÿŸxÇk #%(*+.014679:ADJMTVWXZ[]^bcdkmnqwyz}ÉÖÜâèëíô†£§ß©™´¨≤≥¥µºø¿√≈∆«»–—÷q
-FD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\VisitInfoForm.cs 8r	Ç’
-GD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\VisitsListForm.cs  8j!'59=DGPUberO	 "#$%()*+,-./0123678:;>?@ABEHIJKLMNQRSTVWXYZ[\]^_`cdfghixÇ #%(+/018:@BEIJMSVWY[\_f≠
-ED:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\DoctorInfoForm.cs 8j#4;Br=	
-!$%&'()*+,-./01256789<=>?@CDEFGHIxÇ()*./08>?Fé
-FD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\PatientInfoForm.cs 8r(
- !"#$%&'()*+,-xÇ !#'()ô
-CD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\UserInfoForm.cs 8j+r1
- !"#$%&'(),-./01345678xÇ !"#$%&(/05à
+!&.1<GOrD	
+"#$'()*+,/23456789:=>?@ABCDEFHIJKMPQRSTUVWXYZ[x	Ç$'(),/2458ACHIJKMPUVWï
+ID:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\AddVisitInfoForm.cs 8j#r'	 !$&'()*+,-./01xÇ !$&'+,-∫
+GD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\ChooseDateForm.cs 8j),5@CrA	
+ !"#%&'*-./1236789:;<=>ADEFGHIJKLMNOPQxÇ "'*-.3679:>ADFGKL÷
+BD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\VisitForm.csM 8j#(.4ACJLiuÅçñôù†πºÕrˆ	
+ !"$%&')*+,-/01235678:;<=?@BDEFHIKMNOQRSTUWXY[\^_`abcdefgjklmnopqrsvwxyz{|}~ÇÉÑÖÜáàâäãéèêëíìîóòöõûü°¢£§•¶®©™´¨≠ÆØ±≤≥¥µ∂∑∫ªΩæø¿¡¬ƒ≈∆«»… ÀŒœ–—“”’÷◊ÿŸ⁄xÇk !$&)+,/12578:;BEKNUWXY[\^_cdelnorxz{~ÑÜáäêíìö°§•®™´¨≠≥¥µ∂Ω¿¡ƒ∆«»…—“◊q
+FD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\VisitInfoForm.cs 8r	Ç÷
+GD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Visits\VisitsListForm.cs  8j"(6:>EHQVcfrP	
+ !#$%&)*+,-./01234789;<?@ABCFIJKLMNORSTUWXYZ[\]^_`adeghijxÇ !$&),0129;ACFJKNTWXZ\]`gÆ
+ED:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\DoctorInfoForm.cs 8j$5<Cr>	
+ "%&'()*+,-./01236789:=>?@ADEFGHIJxÇ)*+/019?@Gè
+FD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\PatientInfoForm.cs 8r)	!"#$%&'()*+,-.xÇ!"$()*ö
+CD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Info\UserInfoForm.cs 8j,r2	 !"#$%&'()*-./012456789xÇ!"#$%&')016à
 DD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Profiles\AdminForm.cs 8r*	
  !"$%&'(*+,-./xÇ	!',à
 ED:\git\PolyclinicSystem\PolyclinicSystem\Forms\Profiles\DoctorForm.cs 8j$r%	
@@ -58,22 +57,21 @@ JD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Profiles\EditPatientForm.cs 
  !#$%&()*+,-./0123456789xÇ
 #$%&*+-.345´
 FD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Profiles\PatientForm.cs 8j/3;r<	
- !"#$%&'()*+-.01456789<=>?ABCDEFGxÇ !#'()078>Dó
-JD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Authorization\SignUpForm.cs 8j"%*-/r$	
- #&'(+,.01245xÇ
- #&'(+.0É
+ !"#$%&'()*+-.01456789<=>?ABCDEFGxÇ !#'()078>Dò
+JD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Authorization\SignUpForm.cs 8j#&+.0r%	
+ !$'(),-/12356xÇ!$'(),/1É
 RD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Authorization\ForgotPasswordForm.cs 8jr	
 xÇ
-Õ
-GD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\Authorization.cs[ 8%j&+6:=@BDRXmty|~ëõ•π¬r·	
- !#$'()*,-./012345789;<>?ACEFGHIJKLMOPSTUVWYZ[\]^_`abcdefghijklnopqrsuvwxz{}ÄÇÉÑÖáàâäãåéèíìîïñóòôúùûü†°¢£¶ß®©™´¨≠ÆØ∞±≤≥¥µ∑∫ªºΩæø¿√ƒ≈∆«»… x/Çt #,-./0123789;<ACEKLOYZ[\]^_`abcdefghijnopqrswx}ÄÇäãéïñóòûü†°¢™´¨≠Ø∞¥ºΩæø≈∆«Ñ
-ED:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.csÏ 8&j%|Üõ•±ø…Õ—„È˚ÑåûßØ√∆rØ	
-!"#$%&'()*+,-./02356789:;<=>?@ABDEFGHIJKLMNOPQSTUVWXYZ[\]_`abcdeghijklmnpqrstuvxyz{}~ÄÅÇÉÑáàâäãçéèêëíìîñóòôöúùûü†°¢£¶ß®©™´¨≠ÆØ≤≥¥µ∂∑∏πªºΩæ¿¡¬√ƒ≈∆« ÀŒœ“”‘’÷◊ÿŸ⁄€‹›ﬂ‡·‚‰ÂÊÁÍÎÏÌÓÔÒÚÛÙı˜¯˘˙¸˝˛ˇÄÅÇÖÜáàâäçéèêëíìîïñóòöõúùü†°¢£§•®©™´¨≠∞±≤≥¥µ∂∑∏π∫ªΩæø¿¡√ƒ∆«»… ÀÃÕœ–—“”‘’÷◊ÿŸ⁄€‹›ﬁ‡·‚„‰ÂÊÁËÈÍÎÏÌÓÒÚÛÙıˆ˜¯˘˙˚¸˝˛ˇÅÇÉÑÖáàäãåçéèêëìîïñóòôöõúùûü†°¢£•¶ß®©™´¨≠ÆØ∞±≤≥¥µ∑∏π∫ªºΩæø¿¡¬√ƒ≈∆»… ÀÃÕŒœ–—“”‘’÷◊ÿŸ€‹›ﬁﬂ‡·‚„‰ÂÊÁËÈÍÏÌÓÔÒÚÛÙıˆ˜¯˘˙˚˝˛ˇÄÅÇÉÑÖÜáàâäãåçèêëíìîïñóòôöõúùü†°¢£§•¶ß®©™´≠ÆØ∞±≥¥∂∑∏π∫ªºΩø¿¡¬ƒ«… ÀÃÕœ–—“”‘’÷ÿŸ⁄€‹ﬁﬂ‡·„‰ÂÊÁËÈÍÏÌÓÔÒÚÛÙıˆ˜¯˘˙˚¸˛ˇÄÅÇÑÖÜáâäãåçéèêíìîïñóòôöõúùûü†°¢x.Ç’!"#$%&'()*./29;@HJO_cptÑãçéí£Ø≤≥∑«ÀŒœ“”‘÷◊€ÁÍÎÏÓÔÛÇÖÜáâäçéèëíñ•®©™¨≠∞±≤¥µπ√ƒ∆ À”’÷€‹‰ÊÎÏÙˆ˜¸˝áàäéèóôöõ†°©´¨≠≤≥ªΩæ√ƒ À–—’÷ﬂ·‚ÁËÚÛ¯˘ÅÉÑÖäãìïöõ£§®©≥¥∂∫ªƒ…ÀÃœ”‘ﬁ‡„ÁËÚÛÙ˘˙ÑÜâçéñòùûv
+–
+GD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\Authorization.cs[ 8%j',7;>ACESYnuz}íú¶∫√r„	
+ !"$%()*+-./012345689:<=?@BDFGHIJKLMNPQTUVWXZ[\]^_`abcdefghijklmopqrstvwxy{|~ÄÅÉÑÖÜàâäãåçèêìîïñóòôöùûü†°¢£§ß®©™´¨≠ÆØ∞±≤≥¥µ∂∏ªºΩæø¿¡ƒ≈∆«»… Àx/Çu !$-./0123489:<=BDFLMPZ[\]^_`abcdefghijkopqrstxy~ÄÅÉãåèñóòôü†°¢£´¨≠Æ∞±µΩæø¿∆«»Ü
+ED:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.csÏ 8&j%}áú¶≤¿ Œ“‰Í¸Öçü®∞ƒ«r±	
+ "#$%&'()*+,-./01346789:;<=>?@ABCEFGHIJKLMNOPQRTUVWXYZ[\]^`abcdefhijklmnoqrstuvwyz{|~ÄÅÇÉÑÖàâäãåéèêëíìîïóòôöõùûü†°¢£§ß®©™´¨≠ÆØ∞≥¥µ∂∑∏π∫ºΩæø¡¬√ƒ≈∆«»ÀÃœ–”‘’÷◊ÿŸ⁄€‹›ﬁ‡·‚„ÂÊÁËÎÏÌÓÔÒÚÛÙıˆ¯˘˙˚˝˛ˇÄÅÇÉÜáàâäãéèêëíìîïñóòôõúùû†°¢£§•¶©™´¨≠Æ±≤≥¥µ∂∑∏π∫ªºæø¿¡¬ƒ≈«»… ÀÃÕŒ–—“”‘’÷◊ÿŸ⁄€‹›ﬁﬂ·‚„‰ÂÊÁËÈÍÎÏÌÓÔÒÚÛÙıˆ˜¯˘˙˚¸˝˛ˇÄÇÉÑÖÜàâãåçéèêëíîïñóòôöõúùûü†°¢£§¶ß®©™´¨≠ÆØ∞±≤≥¥µ∂∏π∫ªºΩæø¿¡¬√ƒ≈∆«… ÀÃÕŒœ–—“”‘’÷◊ÿŸ⁄‹›ﬁﬂ‡·‚„‰ÂÊÁËÈÍÎÌÓÔÒÚÛÙıˆ˜¯˘˙˚¸˛ˇÄÅÇÉÑÖÜáàâäãåçéêëíìîïñóòôöõúùû†°¢£§•¶ß®©™´¨ÆØ∞±≤¥µ∑∏π∫ªºΩæ¿¡¬√≈» ÀÃÕŒ–—“”‘’÷◊Ÿ⁄€‹›ﬂ‡·‚‰ÂÊÁËÈÍÎÌÓÔÒÚÛÙıˆ˜¯˘˙˚¸˝ˇÄÅÇÉÖÜáàäãåçéèêëìîïñóòôöõúùûü†°¢£x.Ç’ "#$%&'()*+/03:<AIKP`dquÖåéèì§∞≥¥∏»Ãœ–”‘’◊ÿ‹ËÎÏÌÔÙÉÜáàäãéèêíìó¶©™´≠Æ±≤≥µ∂∫ƒ≈«ÀÃ‘÷◊‹›ÂÁÏÌı˜¯˝˛àâãèêòöõú°¢™¨≠Æ≥¥ºæøƒ≈ÀÃ—“÷◊‡‚„ËÈÒÛÙ˘˙ÇÑÖÜãåîñõú§•©™¥µ∑ªº≈ ÃÕ–‘’ﬂ·‰ËÈÒÛÙı˙˚Öáäéèóôûüv
 FD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\ErrorHandler.cs 8r	
 Ç
-Ò
-HD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Authorization\MainForm.cs+ 8j	!)+-IYiourj	
-"#$%&'(*,./0123456789:;<=>?@ABCDEFGJKLMNOPQRSTUVWZ[\]^_`abcdefgjklmpqrsvwxyz{|}~xÇ#&'*,.12478:=>@EOPQU_`aelrxyz{\
+Ú
+HD:\git\PolyclinicSystem\PolyclinicSystem\Forms\Authorization\MainForm.cs+ 8j	"*,.JZjpvrk	
+ #$%&'()+-/0123456789:;<=>?@ABCDEFGHKLMNOPQRSTUVWX[\]^_`abcdefghklmnqrstwxyz{|}~xÇ#'(+-/23589;>?AFPQRV`abfmsyz{|\
 3D:\git\PolyclinicSystem\PolyclinicSystem\Program.cs 8jr	
 Çg
 CD:\git\PolyclinicSystem\PolyclinicSystem\Properties\AssemblyInfo.csj !"r	
@@ -82,12 +80,10 @@ CD:\git\PolyclinicSystem\PolyclinicSystem\Properties\AssemblyInfo.csj
  !"#Ç
 k
 ID:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\MessagesHandler.cs 8r	
-Ç	Ë
-ID:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\ProfilesHandler.cs6 8jMrW	
- !#$%'()*+,-./012345689;<=?@ABCDEFGHIJKLNOPQRSTUVXY[\]^_`abxÇ3	
- '()*+,-./03458?@ABCDEFGHIJNORSTX]^_ô
-CD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\Validator.cs 8r5	
- !#$%')*+,-.01345678:;<=>?@Ax
-Ç ')*,-0567<=>û
-GD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cse 8#j$
-4BDFHKSUWZbdfhkz}Å∫ÃÕ–”÷Ÿrç	 !"#$%&'()*+,-./125679:;<=>?@ACEGILMNOPQRTVX[\]^_`acegilmnoqrstuvwx{|~ÇÑÖÜáàâäãåçéèêëíìîïñóòôöõúùûü†°¢£§•¶ß®©™´¨≠ÆØ∞±≤≥¥µ∑∏ªºΩæø¿¡¬√ƒ≈∆«»… Œœ—“‘◊⁄‹›ﬁﬂ‡·‚„‰Âx1Çë !#$%&'(-.17<?@CEGILNPQTVX[]_`cegilnquv~ÇÑáâäãåçéêíîñóòôöõùü°£§•¶©™´¨≠±¥∑ø¿¬∆«»—‘◊⁄‹›ﬂ‚
+Ç	È
+ID:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\ProfilesHandler.cs6 8jOrX	 "#%&')*+,-./012345678:;=>?ABCDEFGHIJKLMNPQRSTUVWXZ[]^_`abcdxÇ3")*+,-./012567:ABCDEFGHIJKLPQTUVZ_`aö
+CD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\Validator.cs 8r6	
+!"$%&(*+,-./12456789;<=>?@ABx
+Ç!(*+-.1678=>?°
+GD:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\VisitsHandler.cse 8#j$5CEGILTVX[cegil{~ÇªÕŒ—‘◊⁄rè	
+ !"#$%&'()*+,-./023678:;<=>?@ABDFHJMNOPQRSUWY\]^_`abdfhjmnoprstuvwxy|}ÄÉÖÜáàâäãåçéèêëíìîïñóòôöõúùûü†°¢£§•¶ß®©™´¨≠ÆØ∞±≤≥¥µ∂∏πºΩæø¿¡¬√ƒ≈∆«»… Àœ–“”’ÿ€›ﬁﬂ‡·‚„‰ÂÊx1Çí !"$%&'()./28=@ADFHJMOQRUWY\^`adfhjmorvwÄÉÖàäãåçéèëìïóòôöõúû†¢§•¶ß™´¨≠Æ≤µ∏¿¡√«»…“’ÿ€›ﬁ‡„

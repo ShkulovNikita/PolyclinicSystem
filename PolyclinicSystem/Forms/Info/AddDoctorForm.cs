@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using PolyclinicSystem.Classes;
 
 namespace PolyclinicSystem.Forms.Info
 {
@@ -16,7 +17,7 @@ namespace PolyclinicSystem.Forms.Info
             try
             {
                 //передать все специальности в выпадающий список
-                List<Specialty> specialties = new List<Specialty>();
+                List<Specialty> specialties;
                 specialties = DataHandler.GetSpecialties();
                 foreach (Specialty specialty in specialties)
                     specialtyComboBox.Items.Add(specialty.Name);

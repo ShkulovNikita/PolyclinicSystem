@@ -1,0 +1,5 @@
+﻿----------------------------
+07.06.2021 23:55:38
+System.InvalidOperationException: Последовательность не содержит элементов
+   в System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   в PolyclinicSystem.DataHandler.GetPatient(String login) в D:\git\PolyclinicSystem\PolyclinicSystem\SystemClasses\DataHandler.cs:строка 428

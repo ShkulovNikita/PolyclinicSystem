@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using PolyclinicSystem.Classes;
 
 namespace PolyclinicSystem.Forms.Functions
 {

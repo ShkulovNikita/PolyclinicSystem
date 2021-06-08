@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using PolyclinicSystem.Classes;
 
 namespace PolyclinicSystem.Forms
 {
@@ -15,7 +16,7 @@ namespace PolyclinicSystem.Forms
             birthdateTimePicker.MaxDate = DateTime.Today;
         }
 
-        static public Patient registeredPatient;
+        static public Patient registeredPatient { get; set; }
 
         //кнопка выполнения регистрации
         private void signUpButton_Click(object sender, EventArgs e)

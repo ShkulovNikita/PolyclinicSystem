@@ -36,6 +36,7 @@ namespace PolyclinicSystem.Forms.Info
             this.emailLabel = new System.Windows.Forms.Label();
             this.loginLabel = new System.Windows.Forms.Label();
             this.editButton = new System.Windows.Forms.Button();
+            this.feedbackButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,11 +116,23 @@ namespace PolyclinicSystem.Forms.Info
             this.editButton.UseVisualStyleBackColor = true;
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
+            // feedbackButton
+            // 
+            this.feedbackButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.feedbackButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.feedbackButton.Location = new System.Drawing.Point(472, 202);
+            this.feedbackButton.Name = "feedbackButton";
+            this.feedbackButton.Size = new System.Drawing.Size(160, 50);
+            this.feedbackButton.TabIndex = 22;
+            this.feedbackButton.Text = "Отзывы";
+            this.feedbackButton.UseVisualStyleBackColor = true;
+            // 
             // UserInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 282);
+            this.Controls.Add(this.feedbackButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -141,5 +154,6 @@ namespace PolyclinicSystem.Forms.Info
         private System.Windows.Forms.Label loginLabel;
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Label typeLabel;
+        private System.Windows.Forms.Button feedbackButton;
     }
 }
